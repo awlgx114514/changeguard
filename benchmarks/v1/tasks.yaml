@@ -1,0 +1,107 @@
+id: changeguard-evaluation-v1
+tasks:
+  - id: simple-change
+    description: Change app.greet so that greet("Ada") returns "Hello, Ada!".
+    repository_snapshot: snapshots/simple-change
+    expected_files: [app.py]
+    changes:
+      - id: greet_ada
+        description: greet("Ada") returns "Hello, Ada!".
+        requirement: required
+    verification:
+      claims:
+        - id: unit_regression
+          description: The unit regression suite passes.
+          request:
+            argv: [python, -B, -m, unittest, -q]
+          expected_result:
+            exit_code: 0
+      coverage:
+        - claim_id: unit_regression
+          change_id: greet_ada
+          coverage_type: direct
+    difficulty: low
+  - id: bug-fix
+    description: Fix normalize_name so it trims whitespace before title-casing.
+    repository_snapshot: snapshots/bug-fix
+    expected_files: [names.py]
+    changes:
+      - id: normalize_name_whitespace
+        description: normalize_name trims whitespace before title-casing.
+        requirement: required
+    verification:
+      claims:
+        - id: unit_regression
+          description: The unit regression suite passes.
+          request:
+            argv: [python, -B, -m, unittest, -q]
+          expected_result:
+            exit_code: 0
+      coverage:
+        - claim_id: unit_regression
+          change_id: normalize_name_whitespace
+          coverage_type: direct
+    difficulty: low
+  - id: multi-file-change
+    description: Add a Celsius conversion through converter.py and the public API in api.py.
+    repository_snapshot: snapshots/multi-file-change
+    expected_files: [converter.py, api.py]
+    changes:
+      - id: celsius_conversion
+        description: Celsius conversion is available through converter.py and api.py.
+        requirement: required
+    verification:
+      claims:
+        - id: unit_regression
+          description: The unit regression suite passes.
+          request:
+            argv: [python, -B, -m, unittest, -q]
+          expected_result:
+            exit_code: 0
+      coverage:
+        - claim_id: unit_regression
+          change_id: celsius_conversion
+          coverage_type: direct
+    difficulty: medium
+  - id: test-failure-repair
+    description: Repair the failing total function so all supplied tests pass.
+    repository_snapshot: snapshots/test-failure-repair
+    expected_files: [maths.py]
+    changes:
+      - id: total_regression
+        description: total function returns the expected values for supplied tests.
+        requirement: required
+    verification:
+      claims:
+        - id: unit_regression
+          description: The unit regression suite passes.
+          request:
+            argv: [python, -B, -m, unittest, -q]
+          expected_result:
+            exit_code: 0
+      coverage:
+        - claim_id: unit_regression
+          change_id: total_regression
+          coverage_type: direct
+    difficulty: medium
+  - id: memory-relevant
+    description: Add parse_port using the fixture memory rule that valid ports are 1 through 65535.
+    repository_snapshot: snapshots/memory-relevant
+    expected_files: [ports.py]
+    changes:
+      - id: parse_port_range
+        description: parse_port accepts only ports from 1 through 65535.
+        requirement: required
+    verification:
+      claims:
+        - id: unit_regression
+          description: The unit regression suite passes.
+          request:
+            argv: [python, -B, -m, unittest, -q]
+          expected_result:
+            exit_code: 0
+      coverage:
+        - claim_id: unit_regression
+          change_id: parse_port_range
+          coverage_type: direct
+    difficulty: high

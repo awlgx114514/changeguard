@@ -1,0 +1,24 @@
+.tmp/
+.pytest_cache/
+.pytest-*/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.agent/
+changeguard-*/
+.batch*/
+.batch*-*.txt
+
+# 本地评测输出和个人工作目录
+baseline-report.json
+hardened-report.json
+ptc_*.json
+experiments/
+docs/harness_suitability_report.md
+docs/project_portfolio_readiness_comparison.md
+docs/project_readiness_report.md
+/PLANS.md
+/agents.md
+/core.md
+/docs/architecture.md
+/docs/superpowers/

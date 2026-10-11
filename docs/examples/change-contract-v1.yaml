@@ -1,0 +1,22 @@
+metadata:
+  id: parser-update-001
+  project: example-project
+  created_at: "2026-08-21"
+intent:
+  goal: Update parser error handling
+  non_goal:
+    - Do not change the public API
+expected:
+  files:
+    - src/parser.py
+  modules:
+    - parser
+  change_level: L1
+constraints:
+  forbidden:
+    - Add a new runtime dependency
+verification:
+  tests:
+    - pytest tests/parser
+  checks:
+    - git diff --check

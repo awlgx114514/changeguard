@@ -1,0 +1,22 @@
+version: 1
+metadata:
+  id: simple-change-001
+  project: changeguard-example
+intent:
+  goal: Add a small example function without changing the public API
+  non_goal:
+    - Do not modify unrelated files
+expected:
+  files:
+    - src/example.py
+  modules:
+    - example
+  change_level: L1
+constraints:
+  forbidden:
+    - src/forbidden.py
+verification:
+  tests:
+    - python -m pytest -q
+  checks:
+    - git diff --check

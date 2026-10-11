@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "code-governance"
+version = "0.1.0"
+requires-python = ">=3.9"
+dependencies = [
+  "PyYAML>=6.0",
+  "pydantic>=2.0",
+]
+
+[project.scripts]
+changeguard = "code_governance.cli:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["src", "."]
+testpaths = ["tests"]
+norecursedirs = ["*.egg", ".*", "_darcs", "build", "CVS", "dist", "node_modules", "venv", "{arch}", "tests/fixtures/**/tests"]
