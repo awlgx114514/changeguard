@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import pytest
 
-from experiments.task3_v6.measurement import (
+from benchmarks.task3_v6.measurement import (
     CompletionIdentity,
     CompletionKind,
     InteractionTimingAdapter,

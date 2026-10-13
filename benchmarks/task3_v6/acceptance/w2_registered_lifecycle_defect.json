@@ -1,0 +1,7 @@
+{
+  "asset_identity": "sha256:65d6c9828289239c9ffd39e9ce02a22003e82049010154c4d2ee28213b5bfa5b",
+  "defect_id": "cleanup-resource-release",
+  "description": "Cleanup completion does not guarantee direct child resource release.",
+  "interaction_type": "public_close",
+  "required_lifecycle_fact": "DIRECT_CHILD_LIVE_CONFIRMED"
+}

@@ -1,0 +1,36 @@
+{
+  "asset_id": "W2",
+  "source_identity": "https://github.com/agronholm/anyio@2571e5805b9986cdcbc1e155c9898188cd13d611",
+  "base_revision": "2571e5805b9986cdcbc1e155c9898188cd13d611",
+  "base_source_tree_identity": "25a969076bc3f1afdd8072b71b559127a439204f",
+  "mutation_delta": {
+    "path": "src/anyio/_backends/_asyncio.py",
+    "location": "Process.aclose() after closing redirected pipe transports",
+    "change": "Capture asyncio StreamReader backpressure state for stdout and stderr. Skip the final process wait only while an output reader is paused by buffer backpressure.",
+    "reason": "Reconstruct the registered cleanup-completion/resource-release defect on the backpressured output path.",
+    "preserved_behavior": [
+      "Public AnyIO process APIs and construction paths",
+      "stdin, stdout, and stderr stream-close calls",
+      "per-pipe transport close calls",
+      "process wait and cancellation cleanup when output readers are not backpressured",
+      "exception-path transport handling",
+      "non-target source files"
+    ],
+    "expected_observable_consequence": "Process.aclose() can return while a backpressured direct child remains alive after its output pipe is closed."
+  },
+  "source_hash_algorithm": "sha256-relative-path-and-length-prefixed-content-v1",
+  "final_tree_hash": "65d6c9828289239c9ffd39e9ce02a22003e82049010154c4d2ee28213b5bfa5b",
+  "fixture_identity": "sha256:65d6c9828289239c9ffd39e9ce02a22003e82049010154c4d2ee28213b5bfa5b",
+  "asset_identity": "sha256:65d6c9828289239c9ffd39e9ce02a22003e82049010154c4d2ee28213b5bfa5b",
+  "file_count": 115,
+  "file_sha256": {
+    "src/anyio/_backends/_asyncio.py": "a19700f162674814de19bbf9b20e671c991b4ebf353c343169253c8ae0adb0d2"
+  },
+  "comparison": {
+    "base_source": "D:/Task3Calibration/source/reference-fixed",
+    "changed_source_paths": [
+      "src/anyio/_backends/_asyncio.py"
+    ],
+    "generated_files_excluded": true
+  }
+}

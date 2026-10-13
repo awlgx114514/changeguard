@@ -5,7 +5,7 @@ import os
 
 import pytest
 
-from experiments.task3_v6.deadline import (
+from benchmarks.task3_v6.deadline import (
     QUANTUM_NS,
     eof_deadline_ns,
     probe_deadline_ns,
@@ -108,7 +108,7 @@ def test_native_deadline_wait_preserves_wait_failed():
 
 
 def test_deadline_wait_classifies_completion_after_logical_deadline():
-    from experiments.task3_v6.deadline import classify_wait_result
+    from benchmarks.task3_v6.deadline import classify_wait_result
 
     assert classify_wait_result(
         0,
@@ -120,7 +120,7 @@ def test_deadline_wait_classifies_completion_after_logical_deadline():
 
 
 def test_deadline_wait_classifies_timeout_returned_before_logical_deadline():
-    from experiments.task3_v6.deadline import classify_wait_result
+    from benchmarks.task3_v6.deadline import classify_wait_result
 
     assert classify_wait_result(
         258,

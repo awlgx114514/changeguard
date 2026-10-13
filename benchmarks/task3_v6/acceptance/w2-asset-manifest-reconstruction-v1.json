@@ -1,0 +1,36 @@
+{
+  "asset_id": "W2",
+  "source_identity": "https://github.com/agronholm/anyio@2571e5805b9986cdcbc1e155c9898188cd13d611",
+  "base_revision": "2571e5805b9986cdcbc1e155c9898188cd13d611",
+  "base_source_tree_identity": "25a969076bc3f1afdd8072b71b559127a439204f",
+  "mutation_delta": {
+    "path": "src/anyio/_backends/_asyncio.py",
+    "location": "Process.aclose() successful completion path",
+    "change": "Close redirected pipe transports and return without waiting when the direct process is still running.",
+    "reason": "Reconstruct the registered cleanup-completion/resource-release defect.",
+    "preserved_behavior": [
+      "Public AnyIO process APIs and construction paths",
+      "stdin, stdout, and stderr stream-close calls",
+      "per-pipe transport close calls",
+      "wait() behavior",
+      "exception-path transport handling",
+      "non-target source files"
+    ],
+    "expected_observable_consequence": "Process.aclose() can return while the identity-bound direct child remains alive."
+  },
+  "source_hash_algorithm": "sha256-relative-path-and-length-prefixed-content-v1",
+  "final_tree_hash": "4aa77b70a38f907f559d477059faeb93fabffa91c98b8e0d01cbbc279f581408",
+  "fixture_identity": "sha256:4aa77b70a38f907f559d477059faeb93fabffa91c98b8e0d01cbbc279f581408",
+  "asset_identity": "sha256:4aa77b70a38f907f559d477059faeb93fabffa91c98b8e0d01cbbc279f581408",
+  "file_count": 115,
+  "file_sha256": {
+    "src/anyio/_backends/_asyncio.py": "44c838d7be0d1825004f85651384b8700a52e586412aee24eb724762fe1fd6cd"
+  },
+  "comparison": {
+    "base_source": "D:/Task3Calibration/source/reference-fixed",
+    "changed_source_paths": [
+      "src/anyio/_backends/_asyncio.py"
+    ],
+    "generated_files_excluded": true
+  }
+}

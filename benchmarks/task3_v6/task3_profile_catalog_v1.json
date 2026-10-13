@@ -1,0 +1,249 @@
+{
+  "catalog_version": "task3-profile-catalog-v1",
+  "semantic_spec_version": "task3-semantics-v1",
+  "benchmark_contract_version": "task3-benchmark-v6",
+  "scoring_contract_version": "task3-scoring-v6",
+  "calibration_campaign_version": "task3-calibration-v6",
+  "profiles": [
+    {
+      "profile_id": "KNOWN_FIX",
+      "profile_class": "CORRECT",
+      "required": true,
+      "formal_sample_eligible": true,
+      "registration_status": "REGISTERED_ASSET_MISSING",
+      "semantic_registration": "Known correct implementation used as a positive profile.",
+      "expected_admission_kind": "ALL_FORMAL_RUNS_PASS",
+      "asset_registration": {
+        "status": "NOT_YET_AVAILABLE",
+        "path": null,
+        "manifest_reference": null
+      },
+      "acceptance_artifact_reference": null,
+      "notes": "Required correct profile from the frozen Task3 v6 universe."
+    },
+    {
+      "profile_id": "CA_DIFFERENT_TRANSPORT_HELPER",
+      "profile_class": "CORRECT",
+      "required": true,
+      "formal_sample_eligible": true,
+      "registration_status": "REGISTERED_ASSET_MISSING",
+      "semantic_registration": "Correct alternative using a different transport helper.",
+      "expected_admission_kind": "ALL_FORMAL_RUNS_PASS",
+      "asset_registration": {
+        "status": "NOT_YET_AVAILABLE",
+        "path": null,
+        "manifest_reference": null
+      },
+      "acceptance_artifact_reference": null,
+      "notes": "Required correct profile from the frozen Task3 v6 universe."
+    },
+    {
+      "profile_id": "CA_LEGAL_CLEANUP_ORDERING",
+      "profile_class": "CORRECT",
+      "required": true,
+      "formal_sample_eligible": true,
+      "registration_status": "REGISTERED_ASSET_MISSING",
+      "semantic_registration": "Correct alternative using a legal cleanup ordering.",
+      "expected_admission_kind": "ALL_FORMAL_RUNS_PASS",
+      "asset_registration": {
+        "status": "NOT_YET_AVAILABLE",
+        "path": null,
+        "manifest_reference": null
+      },
+      "acceptance_artifact_reference": null,
+      "notes": "Required correct profile from the frozen Task3 v6 universe."
+    },
+    {
+      "profile_id": "CA_LATE_CACHE_UPDATE",
+      "profile_class": "CORRECT",
+      "required": true,
+      "formal_sample_eligible": true,
+      "registration_status": "REGISTERED_ASSET_MISSING",
+      "semantic_registration": "Correct alternative using a late cache update.",
+      "expected_admission_kind": "ALL_FORMAL_RUNS_PASS",
+      "asset_registration": {
+        "status": "NOT_YET_AVAILABLE",
+        "path": null,
+        "manifest_reference": null
+      },
+      "acceptance_artifact_reference": null,
+      "notes": "Required correct profile from the frozen Task3 v6 universe."
+    },
+    {
+      "profile_id": "CA_ASYNC_CLOSED_STREAM_PROBE",
+      "profile_class": "CORRECT",
+      "required": true,
+      "formal_sample_eligible": true,
+      "registration_status": "REGISTERED_ASSET_MISSING",
+      "semantic_registration": "Correct alternative using an asynchronous closed-stream probe.",
+      "expected_admission_kind": "ALL_FORMAL_RUNS_PASS",
+      "asset_registration": {
+        "status": "NOT_YET_AVAILABLE",
+        "path": null,
+        "manifest_reference": null
+      },
+      "acceptance_artifact_reference": null,
+      "notes": "Required correct profile from the frozen Task3 v6 universe."
+    },
+    {
+      "profile_id": "CA_BUFFERING_SPOOLING",
+      "profile_class": "CORRECT",
+      "required": true,
+      "formal_sample_eligible": true,
+      "registration_status": "REGISTERED_ASSET_MISSING",
+      "semantic_registration": "Correct alternative using buffering or spooling.",
+      "expected_admission_kind": "ALL_FORMAL_RUNS_PASS",
+      "asset_registration": {
+        "status": "NOT_YET_AVAILABLE",
+        "path": null,
+        "manifest_reference": null
+      },
+      "acceptance_artifact_reference": null,
+      "notes": "Required correct profile from the frozen Task3 v6 universe."
+    },
+    {
+      "profile_id": "W1",
+      "profile_class": "REQUIRED_WRONG",
+      "required": true,
+      "formal_sample_eligible": true,
+      "registration_status": "REGISTERED",
+      "semantic_registration": "Required wrong variant W1.",
+      "expected_admission_kind": "ALL_FORMAL_RUNS_CONFIRMED_REJECTION",
+      "asset_registration": {
+        "status": "PRESENT_UNACCEPTED",
+        "path": "benchmarks/task3_v6/assets/W1/reference-fixed",
+        "manifest_reference": null
+      },
+      "acceptance_artifact_reference": null,
+      "notes": "Source files are present; no catalog-bound profile acceptance is registered."
+    },
+    {
+      "profile_id": "W2",
+      "profile_class": "REQUIRED_WRONG",
+      "required": true,
+      "formal_sample_eligible": true,
+      "registration_status": "REGISTERED",
+      "semantic_registration": "Required wrong variant W2.",
+      "expected_admission_kind": "ALL_FORMAL_RUNS_CONFIRMED_REJECTION",
+      "asset_registration": {
+        "status": "PRESENT_UNACCEPTED",
+        "path": "benchmarks/task3_v6/assets/W2/wrong-variant",
+        "manifest_reference": "benchmarks/task3_v6/acceptance/w2-asset-manifest-fidelity-v2.json"
+      },
+      "acceptance_artifact_reference": null,
+      "notes": "Legacy pre-freeze records lack catalog binding and do not count as current acceptance."
+    },
+    {
+      "profile_id": "W3",
+      "profile_class": "REQUIRED_WRONG",
+      "required": true,
+      "formal_sample_eligible": true,
+      "registration_status": "REGISTERED_ASSET_MISSING",
+      "semantic_registration": "Required wrong variant W3.",
+      "expected_admission_kind": "ALL_FORMAL_RUNS_CONFIRMED_REJECTION",
+      "asset_registration": {
+        "status": "NOT_YET_AVAILABLE",
+        "path": null,
+        "manifest_reference": null
+      },
+      "acceptance_artifact_reference": null,
+      "notes": "Required wrong profile from the frozen Task3 v6 universe."
+    },
+    {
+      "profile_id": "W4",
+      "profile_class": "REQUIRED_WRONG",
+      "required": true,
+      "formal_sample_eligible": true,
+      "registration_status": "REGISTERED_ASSET_MISSING",
+      "semantic_registration": "Required wrong variant W4.",
+      "expected_admission_kind": "ALL_FORMAL_RUNS_CONFIRMED_REJECTION",
+      "asset_registration": {
+        "status": "NOT_YET_AVAILABLE",
+        "path": null,
+        "manifest_reference": null
+      },
+      "acceptance_artifact_reference": null,
+      "notes": "Required wrong profile from the frozen Task3 v6 universe."
+    },
+    {
+      "profile_id": "W7",
+      "profile_class": "REQUIRED_WRONG",
+      "required": true,
+      "formal_sample_eligible": true,
+      "registration_status": "REGISTERED_ASSET_MISSING",
+      "semantic_registration": "Required wrong variant W7.",
+      "expected_admission_kind": "ALL_FORMAL_RUNS_CONFIRMED_REJECTION",
+      "asset_registration": {
+        "status": "NOT_YET_AVAILABLE",
+        "path": null,
+        "manifest_reference": null
+      },
+      "acceptance_artifact_reference": null,
+      "notes": "Required wrong profile from the frozen Task3 v6 universe."
+    },
+    {
+      "profile_id": "DESTRUCTIVE_WAIT",
+      "profile_class": "REQUIRED_WRONG",
+      "required": true,
+      "formal_sample_eligible": true,
+      "registration_status": "REGISTERED_ASSET_MISSING",
+      "semantic_registration": "Required wrong variant that waits destructively.",
+      "expected_admission_kind": "ALL_FORMAL_RUNS_CONFIRMED_REJECTION",
+      "asset_registration": {
+        "status": "NOT_YET_AVAILABLE",
+        "path": null,
+        "manifest_reference": null
+      },
+      "acceptance_artifact_reference": null,
+      "notes": "Required wrong profile from the frozen Task3 v6 universe."
+    },
+    {
+      "profile_id": "WAIT_FOR_DESCENDANT_EOF",
+      "profile_class": "REQUIRED_WRONG",
+      "required": true,
+      "formal_sample_eligible": true,
+      "registration_status": "REGISTERED_ASSET_MISSING",
+      "semantic_registration": "Required wrong variant that waits for descendant EOF.",
+      "expected_admission_kind": "ALL_FORMAL_RUNS_CONFIRMED_REJECTION",
+      "asset_registration": {
+        "status": "NOT_YET_AVAILABLE",
+        "path": null,
+        "manifest_reference": null
+      },
+      "acceptance_artifact_reference": null,
+      "notes": "Required wrong profile from the frozen Task3 v6 universe."
+    },
+    {
+      "profile_id": "W5",
+      "profile_class": "EXCLUDED_LIMITATION",
+      "required": false,
+      "formal_sample_eligible": false,
+      "registration_status": "REGISTERED",
+      "semantic_registration": "Excluded by the frozen known-observability-limitation designation.",
+      "expected_admission_kind": "EXCLUDED_FROM_FORMAL_ADMISSION",
+      "asset_registration": {
+        "status": "NOT_REQUIRED_LIMITATION",
+        "path": null,
+        "manifest_reference": null
+      },
+      "acceptance_artifact_reference": null,
+      "notes": "Excluded for KNOWN_OBSERVABILITY_LIMITATION."
+    },
+    {
+      "profile_id": "W6",
+      "profile_class": "EXCLUDED_LIMITATION",
+      "required": false,
+      "formal_sample_eligible": false,
+      "registration_status": "REGISTERED",
+      "semantic_registration": "Excluded by the frozen known-observability-limitation designation.",
+      "expected_admission_kind": "EXCLUDED_FROM_FORMAL_ADMISSION",
+      "asset_registration": {
+        "status": "NOT_REQUIRED_LIMITATION",
+        "path": null,
+        "manifest_reference": null
+      },
+      "acceptance_artifact_reference": null,
+      "notes": "Excluded for KNOWN_OBSERVABILITY_LIMITATION."
+    }
+  ]
+}

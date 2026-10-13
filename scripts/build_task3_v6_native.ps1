@@ -1,6 +1,6 @@
 $ErrorActionPreference = 'Stop'
 $repoRoot = Split-Path -Parent $PSScriptRoot
-$source = Join-Path $repoRoot 'experiments\task3_v6\atomic64.c'
+$source = Join-Path $repoRoot 'benchmarks\task3_v6\atomic64.c'
 $outputDirectory = Join-Path $repoRoot '.tmp\task3_v6'
 $output = Join-Path $outputDirectory 'task3_atomic.dll'
 $compiler = Get-Command 'gcc.exe' -ErrorAction Stop

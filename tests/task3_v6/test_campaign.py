@@ -8,7 +8,7 @@ from dataclasses import replace
 
 import pytest
 
-from experiments.task3_v6.campaign import (
+from benchmarks.task3_v6.campaign import (
     CampaignIdentity,
     CampaignProfileType,
     CampaignStore,
@@ -18,7 +18,7 @@ from experiments.task3_v6.campaign import (
     RunEvidence,
     Verdict,
 )
-from experiments.task3_v6.measurement import (
+from benchmarks.task3_v6.measurement import (
     CompletionIdentity,
     CompletionKind,
     MeasurementProfile,
