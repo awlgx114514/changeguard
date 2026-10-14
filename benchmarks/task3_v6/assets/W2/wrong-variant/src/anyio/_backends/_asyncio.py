@@ -1120,6 +1120,10 @@ class Process(abc.Process):
     _transport: asyncio.SubprocessTransport
 
     async def aclose(self) -> None:
+        backpressured = any(
+            stream is not None and stream._stream._paused
+            for stream in (self._stdout, self._stderr)
+        )
         with CancelScope(shield=True) as scope:
             # We need to close the underlying pipe_transports as well to allow a
             # process blocking on full buffers to receive SIGPIPE and exit.
@@ -1138,7 +1142,7 @@ class Process(abc.Process):
 
             scope.shield = False
             try:
-                if self._process.returncode is not None:
+                if not backpressured:
                     await self.wait()
             except BaseException:
                 scope.shield = True

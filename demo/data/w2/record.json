@@ -1,0 +1,433 @@
+{
+  "actual_backend_sha256": "a19700f162674814de19bbf9b20e671c991b4ebf353c343169253c8ae0adb0d2",
+  "artifact_schema": "task3-profile-prefreeze-run-v1",
+  "asset_file_count": 115,
+  "asset_identity": "sha256:65d6c9828289239c9ffd39e9ce02a22003e82049010154c4d2ee28213b5bfa5b",
+  "asset_manifest_path": "benchmarks/task3_v6/acceptance/w2-asset-manifest-prefreeze-v3.json",
+  "asset_manifest_sha256": "48a41820a81f5d46751dc34b4dbf127e1f4374f0760b480741133381172ab107",
+  "asset_tree_sha256": "65d6c9828289239c9ffd39e9ce02a22003e82049010154c4d2ee28213b5bfa5b",
+  "attribution_result": {
+    "category": "confirmed_rejection",
+    "conditions": [
+      {
+        "asset_identity_matches": true,
+        "evidence_id": "449f84734816f81e3b4a9cb15f5ddc4464e7be13413fb9c5c532c347ba76c719",
+        "observed_fact_matches": true,
+        "prerequisites_complete": true,
+        "registered_defect_applies": true,
+        "same_run": true,
+        "valid": true
+      }
+    ],
+    "evidence_ids": [
+      "449f84734816f81e3b4a9cb15f5ddc4464e7be13413fb9c5c532c347ba76c719"
+    ],
+    "valid": true
+  },
+  "base_revision": "2571e5805b9986cdcbc1e155c9898188cd13d611",
+  "benchmark_implementation_commit": "b92c883a567e4b1cd7af5c8b02d9a13363713a3b",
+  "benchmark_implementation_tree": "a0bc6855a8bb97e97d1dc459d98ca1d3b6a70553",
+  "buffering_spooling_probe": null,
+  "campaign_id": "task3-prefreeze-70eacc12ac54420ba912704f5a6d5ef4",
+  "close_error": null,
+  "completed_at_utc": "2026-10-14T00:51:39.133348+00:00",
+  "completion_evidence": {
+    "allocation_identity": "2bdf1db67f204080b5a191944e470cd5",
+    "asset_identity": "sha256:65d6c9828289239c9ffd39e9ce02a22003e82049010154c4d2ee28213b5bfa5b",
+    "budget_ns": 12000000000,
+    "campaign_id": "task3-prefreeze-70eacc12ac54420ba912704f5a6d5ef4",
+    "case_id": "subprocess-close",
+    "clock_identity": "QueryPerformanceCounter",
+    "completion_kind": "returned",
+    "counter_frequency": 10000000,
+    "deadline_formula_version": "task3-deadline-formula-v1",
+    "environment_identity": "sha256:1e91c302092e83f255a611d4334ae3d62f1aa995e63f24d0451d9b8f910344c1",
+    "evidence_id": "4f86de8a33e0171073aecd684aaf6763906dec929dd1b69c8fe4ffe1dbc4b6b2",
+    "interaction_generation": 1,
+    "interaction_id": "backpressured-close-4",
+    "interaction_type": "public_close",
+    "lifecycle_evidence_ids": [
+      "449f84734816f81e3b4a9cb15f5ddc4464e7be13413fb9c5c532c347ba76c719"
+    ],
+    "lifecycle_required": true,
+    "measurement_profile_identity": "task3-calibration-v6:wrong-prefreeze",
+    "observation_state": "COMMITTED",
+    "record_commit_identity": "ce74b8f3004b4219a863b3d01e044694",
+    "run_id": "W2-03e0e373d17f453c946e8ff3fb32b9c8",
+    "semantic_timeout": "NOT_CONFIRMED",
+    "slot_id": 4,
+    "snapshot_identity": "82be3939e8dfe2f63009e0446005abd753f8a7947c51b1bffc0dd814d2691106"
+  },
+  "component_results": [
+    {
+      "component_id": "subprocess-close:backpressured-close-4:completion_record",
+      "evidence_ids": [
+        "4f86de8a33e0171073aecd684aaf6763906dec929dd1b69c8fe4ffe1dbc4b6b2"
+      ],
+      "verdict": "PASS"
+    },
+    {
+      "component_id": "subprocess-close:backpressured-close-4:deadline",
+      "evidence_ids": [
+        "4f86de8a33e0171073aecd684aaf6763906dec929dd1b69c8fe4ffe1dbc4b6b2"
+      ],
+      "verdict": "PASS"
+    },
+    {
+      "component_id": "subprocess-close:backpressured-close-4:direct_child_lifecycle",
+      "evidence_ids": [
+        "449f84734816f81e3b4a9cb15f5ddc4464e7be13413fb9c5c532c347ba76c719"
+      ],
+      "verdict": "FAIL"
+    }
+  ],
+  "direct_child_component": {
+    "component_id": "subprocess-close:backpressured-close-4:direct_child_lifecycle",
+    "evidence_ids": [
+      "449f84734816f81e3b4a9cb15f5ddc4464e7be13413fb9c5c532c347ba76c719"
+    ],
+    "verdict": "FAIL"
+  },
+  "environment_details": {
+    "cwd": "D:\\code governance",
+    "dependencies": [
+      [
+        "Pygments",
+        "2.21.0"
+      ],
+      [
+        "anyio",
+        "4.14.1.dev0"
+      ],
+      [
+        "attrs",
+        "26.1.0"
+      ],
+      [
+        "blockbuster",
+        "1.5.28"
+      ],
+      [
+        "cffi",
+        "2.1.1"
+      ],
+      [
+        "code-governance",
+        "0.1.0"
+      ],
+      [
+        "colorama",
+        "0.4.6"
+      ],
+      [
+        "cryptography",
+        "50.0.1"
+      ],
+      [
+        "forbiddenfruit",
+        "0.1.4"
+      ],
+      [
+        "hypothesis",
+        "6.168.0"
+      ],
+      [
+        "idna",
+        "3.20"
+      ],
+      [
+        "iniconfig",
+        "2.3.0"
+      ],
+      [
+        "outcome",
+        "1.3.0.post0"
+      ],
+      [
+        "packaging",
+        "26.3"
+      ],
+      [
+        "pluggy",
+        "1.6.0"
+      ],
+      [
+        "psutil",
+        "7.2.2"
+      ],
+      [
+        "pycparser",
+        "3.0"
+      ],
+      [
+        "pytest",
+        "9.1.1"
+      ],
+      [
+        "pytest-mock",
+        "3.15.1"
+      ],
+      [
+        "pytest-timeout",
+        "2.4.0"
+      ],
+      [
+        "setuptools",
+        "84.0.0"
+      ],
+      [
+        "setuptools-scm",
+        "9.2.2"
+      ],
+      [
+        "sniffio",
+        "1.3.1"
+      ],
+      [
+        "sortedcontainers",
+        "2.4.0"
+      ],
+      [
+        "trio",
+        "0.34.0"
+      ],
+      [
+        "trustme",
+        "1.2.1"
+      ],
+      [
+        "truststore",
+        "0.10.4"
+      ]
+    ],
+    "machine": "AMD64",
+    "os": "Windows-11-10.0.26200-SP0",
+    "path": "C:\\Users\\32313\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell;C:\\Users\\32313\\.codex\\tmp\\arg0\\codex-arg05nD4IS;C:\\Users\\32313\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\libheif\\libheif\\bin;C:\\Users\\32313\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\jxrlib\\jxrlib\\bin;C:\\Users\\32313\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\poppler\\Library\\bin;C:\\Users\\32313\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\bin\\override;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.3\\bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.3\\libnvvp;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;D:\\Windows Kits\\10\\Windows Performance Toolkit\\;D:\\vsc\\mingw64\\bin;D:\\Anaconda;D:\\Anaconda\\Scripts;D:\\Anaconda\\Library\\bin;C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2021.1.0\\;D:\\js\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Users\\32313\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\;C:\\Users\\32313\\AppData\\Local\\Programs\\Python\\Python312\\;D:\\CodexCLI\\CodexFiles\\npm-global;D:\\python\\Scripts\\;D:\\python\\;C:\\Users\\32313\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell;C:\\Users\\32313\\AppData\\Local\\Microsoft\\WindowsApps;D:\\vsc\\Microsoft VS Code\\bin;D:\\pycharm\\PyCharm 2024.1.7\\bin;C:\\Users\\32313\\AppData\\Roaming\\npm;C:\\Users\\32313\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Anthropic.ClaudeCode_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\\Users\\32313\\AppData\\Local\\Kingsoft\\WPS Office\\12.1.0.27458\\clitool;D:\\Ollama;C:\\Users\\32313\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\bin\\fallback;C:\\Users\\32313\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin;C:\\Users\\32313\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\git\\cmd;C:\\Users\\32313\\AppData\\Local\\OpenAI\\Codex\\bin\\9a7ba4b9ea0c44a3;C:\\Users\\32313\\AppData\\Local\\OpenAI\\Codex\\bin\\2e5e00daee91c61d",
+    "pytest_plugins": [
+      "anyio",
+      "assertion",
+      "cacheprovider",
+      "capture",
+      "capturemanager",
+      "debugging",
+      "doctest",
+      "faulthandler",
+      "fixtures",
+      "funcmanage",
+      "helpconfig",
+      "hypothesispytest",
+      "junitxml",
+      "legacypath",
+      "legacypath-tmpdir",
+      "lfplugin",
+      "logging",
+      "logging-plugin",
+      "main",
+      "mark",
+      "monkeypatch",
+      "nfplugin",
+      "pastebin",
+      "pytest_mock",
+      "pytestconfig",
+      "python",
+      "recwarn",
+      "reports",
+      "runner",
+      "session",
+      "setuponly",
+      "setupplan",
+      "skipping",
+      "stepwise",
+      "subtests",
+      "terminal",
+      "terminalprogress",
+      "terminalreporter",
+      "threadexception",
+      "timeout",
+      "tmpdir",
+      "unittest",
+      "unraisableexception",
+      "warnings"
+    ],
+    "python_executable": "D:\\Task3Calibration\\.venvs\\fix\\Scripts\\python.exe",
+    "python_version": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+    "unnamed_plugin_count": 1,
+    "windows_version": "10.0.26200"
+  },
+  "environment_identity": "sha256:1e91c302092e83f255a611d4334ae3d62f1aa995e63f24d0451d9b8f910344c1",
+  "evidence_ids": [
+    "4f86de8a33e0171073aecd684aaf6763906dec929dd1b69c8fe4ffe1dbc4b6b2",
+    "449f84734816f81e3b4a9cb15f5ddc4464e7be13413fb9c5c532c347ba76c719"
+  ],
+  "fail_attribution": "confirmed_rejection",
+  "fixture_identity": "sha256:65d6c9828289239c9ffd39e9ce02a22003e82049010154c4d2ee28213b5bfa5b",
+  "grader_sha256": "b17e1d7d641152beac748dd91d21812ad0c7935064aa1a0c61c93dca9a24dc52",
+  "helper_identity": {
+    "benchmarks/task3_v6/acceptance/test_known_fix_resource_probe.py": "b17e1d7d641152beac748dd91d21812ad0c7935064aa1a0c61c93dca9a24dc52",
+    "benchmarks/task3_v6/campaign.py": "6c6d480dfae37819c57ee8cba7dacb9bad587764c150c4849c1ff21b975dad10",
+    "benchmarks/task3_v6/measurement.py": "09466de2a1397d651174b41e568d029f2a77e808f41a58a3374e59690fb01076",
+    "benchmarks/task3_v6/profile_catalog.py": "85ddc0da530e3e51a3f57eeb0f51ba31d30588943e39c0c33cf7e78fa30a05b3",
+    "benchmarks/task3_v6/source_binding.py": "5fdac826cce2802677b7bd9e4983f42f832af423f7beefd1ba13eb94ff4d8900"
+  },
+  "lifecycle_evidence": {
+    "asset_identity": "sha256:65d6c9828289239c9ffd39e9ce02a22003e82049010154c4d2ee28213b5bfa5b",
+    "campaign_id": "task3-prefreeze-70eacc12ac54420ba912704f5a6d5ef4",
+    "case_id": "subprocess-close",
+    "child_binding_status": "VALID",
+    "child_creation_identity": 134364126989757922,
+    "child_pid": 31264,
+    "child_process_identity": "f2c09695edf16ba97bbe8ad04e916b24c7a7fcfc8b91975a5e6727a3e7737d61",
+    "evidence_id": "449f84734816f81e3b4a9cb15f5ddc4464e7be13413fb9c5c532c347ba76c719",
+    "interaction_generation": 1,
+    "interaction_id": "backpressured-close-4",
+    "lifecycle_fact": "DIRECT_CHILD_LIVE_CONFIRMED",
+    "observation_authority": "supervisor-task3-v6",
+    "observation_sequence": 1,
+    "observation_source": "SUPERVISOR_TRUSTED_OS",
+    "observation_timestamp_utc": "2026-10-14T00:51:39.095459+00:00",
+    "os_query_error": null,
+    "os_query_operation": "WaitForSingleObject(handle, 0)",
+    "os_query_raw_result": 258,
+    "query_order_status": "VALID_FIRST_EXTERNAL_CHECK",
+    "run_id": "W2-03e0e373d17f453c946e8ff3fb32b9c8",
+    "slot_id": 4,
+    "stable_handle_binding_identity": "dd49e80e3d3b4b27934a7cabed0921e2",
+    "transaction_completion_identity": "82be3939e8dfe2f63009e0446005abd753f8a7947c51b1bffc0dd814d2691106",
+    "transaction_identity": "ce74b8f3004b4219a863b3d01e044694"
+  },
+  "measurement_profile": {
+    "budget_ns": 12000000000,
+    "clock_identity": "QueryPerformanceCounter",
+    "counter_frequency": 10000000,
+    "formula_version": "task3-deadline-formula-v1",
+    "profile_identity": "task3-calibration-v6:wrong-prefreeze"
+  },
+  "mutation_delta": {
+    "change": "Skip the final direct-child wait while stdout or stderr is paused by asyncio reader backpressure.",
+    "expected_observable_consequence": "Process.aclose() returns while a backpressured direct child remains alive after its output pipe is closed.",
+    "location": "Process.aclose() after closing redirected pipe transports",
+    "path": "src/anyio/_backends/_asyncio.py",
+    "preserved_behavior": [
+      "Public AnyIO process APIs and construction paths",
+      "stdin, stdout, and stderr stream-close calls",
+      "per-pipe transport close calls",
+      "process wait and cancellation cleanup when output readers are not backpressured",
+      "exception-path transport handling",
+      "non-target source files"
+    ],
+    "reason": "Reconstruct the registered cleanup-completion/resource-release defect on the backpressured output path."
+  },
+  "process_returncode": null,
+  "profile_catalog_file_sha256": "138f37ca7b8b162fd848606d4dcae1c0b96daf0671f759b4e4efca5973ebc448",
+  "profile_catalog_sha256": "83872b928bd2685eef8b68203f1d9316b419be6a9eeb1f967e084d3e8e1b9e4e",
+  "profile_catalog_version": "task3-profile-catalog-v1",
+  "profile_class": "REQUIRED_WRONG",
+  "profile_id": "W2",
+  "public_stream_probe": {
+    "status": "CLOSED_RESOURCE_ERROR"
+  },
+  "raw_wait_result": 258,
+  "registered_lifecycle_defect": {
+    "defect_id": "cleanup-resource-release",
+    "interaction_type": "public_close",
+    "required_fact": "DIRECT_CHILD_LIVE_CONFIRMED"
+  },
+  "run_id": "W2-03e0e373d17f453c946e8ff3fb32b9c8",
+  "slot_id": 4,
+  "source_identity": "https://github.com/agronholm/anyio@2571e5805b9986cdcbc1e155c9898188cd13d611",
+  "source_import_evidence": {
+    "actual_anyio_path": "D:\\code governance\\benchmarks\\task3_v6\\assets\\W2\\wrong-variant\\src\\anyio\\__init__.py",
+    "actual_backend_path": "D:\\code governance\\benchmarks\\task3_v6\\assets\\W2\\wrong-variant\\src\\anyio\\_backends\\_asyncio.py",
+    "actual_backend_sha256": "a19700f162674814de19bbf9b20e671c991b4ebf353c343169253c8ae0adb0d2",
+    "asset_identity": "sha256:65d6c9828289239c9ffd39e9ce02a22003e82049010154c4d2ee28213b5bfa5b",
+    "binding_errors": [],
+    "binding_status": "PASS",
+    "case_id": "backpressured-close",
+    "cwd": "D:\\code governance",
+    "environment_identity": "sha256:1e91c302092e83f255a611d4334ae3d62f1aa995e63f24d0451d9b8f910344c1",
+    "expected_anyio_path": "D:\\code governance\\benchmarks\\task3_v6\\assets\\W2\\wrong-variant\\src\\anyio\\__init__.py",
+    "expected_backend_path": "D:\\code governance\\benchmarks\\task3_v6\\assets\\W2\\wrong-variant\\src\\anyio\\_backends\\_asyncio.py",
+    "expected_backend_sha256": "a19700f162674814de19bbf9b20e671c991b4ebf353c343169253c8ae0adb0d2",
+    "expected_source_root": "D:\\code governance\\benchmarks\\task3_v6\\assets\\W2\\wrong-variant\\src",
+    "fixture_identity": "sha256:65d6c9828289239c9ffd39e9ce02a22003e82049010154c4d2ee28213b5bfa5b",
+    "python_executable": "D:\\Task3Calibration\\.venvs\\fix\\Scripts\\python.exe",
+    "run_id": "W2-03e0e373d17f453c946e8ff3fb32b9c8",
+    "sys_path": [
+      "D:\\code governance",
+      "D:\\code governance\\benchmarks\\task3_v6\\acceptance",
+      "D:\\code governance\\src",
+      "D:\\code governance",
+      "D:\\code governance",
+      "D:\\code governance\\benchmarks\\task3_v6\\assets\\W2\\wrong-variant\\src",
+      "D:\\python\\python314.zip",
+      "D:\\python\\DLLs",
+      "D:\\python\\Lib",
+      "D:\\python",
+      "D:\\Task3Calibration\\.venvs\\fix",
+      "D:\\Task3Calibration\\.venvs\\fix\\Lib\\site-packages",
+      "D:\\Task3Calibration\\source\\reference-fixed\\src"
+    ]
+  },
+  "task_verdict": "FAIL",
+  "terminal_decision": {
+    "allocation_identity": "2bdf1db67f204080b5a191944e470cd5",
+    "attribution_result": {
+      "category": "confirmed_rejection",
+      "conditions": [
+        {
+          "asset_identity_matches": true,
+          "evidence_id": "449f84734816f81e3b4a9cb15f5ddc4464e7be13413fb9c5c532c347ba76c719",
+          "observed_fact_matches": true,
+          "prerequisites_complete": true,
+          "registered_defect_applies": true,
+          "same_run": true,
+          "valid": true
+        }
+      ],
+      "evidence_ids": [
+        "449f84734816f81e3b4a9cb15f5ddc4464e7be13413fb9c5c532c347ba76c719"
+      ],
+      "valid": true
+    },
+    "campaign_id": "task3-prefreeze-70eacc12ac54420ba912704f5a6d5ef4",
+    "case_id": "subprocess-close",
+    "component_results": [
+      {
+        "component_id": "subprocess-close:backpressured-close-4:completion_record",
+        "evidence_ids": [
+          "4f86de8a33e0171073aecd684aaf6763906dec929dd1b69c8fe4ffe1dbc4b6b2"
+        ],
+        "verdict": "PASS"
+      },
+      {
+        "component_id": "subprocess-close:backpressured-close-4:deadline",
+        "evidence_ids": [
+          "4f86de8a33e0171073aecd684aaf6763906dec929dd1b69c8fe4ffe1dbc4b6b2"
+        ],
+        "verdict": "PASS"
+      },
+      {
+        "component_id": "subprocess-close:backpressured-close-4:direct_child_lifecycle",
+        "evidence_ids": [
+          "449f84734816f81e3b4a9cb15f5ddc4464e7be13413fb9c5c532c347ba76c719"
+        ],
+        "verdict": "FAIL"
+      }
+    ],
+    "decision_reason": "derived from identity-bound terminal measurement evidence",
+    "evidence_ids": [
+      "4f86de8a33e0171073aecd684aaf6763906dec929dd1b69c8fe4ffe1dbc4b6b2",
+      "449f84734816f81e3b4a9cb15f5ddc4464e7be13413fb9c5c532c347ba76c719"
+    ],
+    "fail_attribution": "confirmed_rejection",
+    "interaction_generation": 1,
+    "interaction_id": "backpressured-close-4",
+    "record_commit_identity": "ce74b8f3004b4219a863b3d01e044694",
+    "run_id": "W2-03e0e373d17f453c946e8ff3fb32b9c8",
+    "slot_id": 4,
+    "snapshot_identity": "82be3939e8dfe2f63009e0446005abd753f8a7947c51b1bffc0dd814d2691106",
+    "terminal_decision_identity": "terminal-W2-03e0e373d17f453c946e8ff3fb32b9c8",
+    "verdict": "FAIL"
+  },
+  "terminal_decision_identity": "terminal-W2-03e0e373d17f453c946e8ff3fb32b9c8"
+}

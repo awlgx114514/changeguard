@@ -1,0 +1,46 @@
+{
+  "asset_id": "W2",
+  "source_identity": "https://github.com/agronholm/anyio@2571e5805b9986cdcbc1e155c9898188cd13d611",
+  "base_revision": "2571e5805b9986cdcbc1e155c9898188cd13d611",
+  "base_source_tree_identity": "25a969076bc3f1afdd8072b71b559127a439204f",
+  "benchmark_implementation_commit": "b92c883a567e4b1cd7af5c8b02d9a13363713a3b",
+  "benchmark_implementation_tree": "a0bc6855a8bb97e97d1dc459d98ca1d3b6a70553",
+  "profile_catalog_version": "task3-profile-catalog-v1",
+  "profile_catalog_sha256": "83872b928bd2685eef8b68203f1d9316b419be6a9eeb1f967e084d3e8e1b9e4e",
+  "source_hash_algorithm": "sha256-relative-path-and-length-prefixed-content-v1",
+  "final_tree_hash": "65d6c9828289239c9ffd39e9ce02a22003e82049010154c4d2ee28213b5bfa5b",
+  "fixture_identity": "sha256:65d6c9828289239c9ffd39e9ce02a22003e82049010154c4d2ee28213b5bfa5b",
+  "asset_identity": "sha256:65d6c9828289239c9ffd39e9ce02a22003e82049010154c4d2ee28213b5bfa5b",
+  "file_count": 115,
+  "file_sha256": {
+    "src/anyio/_backends/_asyncio.py": "a19700f162674814de19bbf9b20e671c991b4ebf353c343169253c8ae0adb0d2"
+  },
+  "mutation_delta": {
+    "path": "src/anyio/_backends/_asyncio.py",
+    "location": "Process.aclose() after closing redirected pipe transports",
+    "change": "Skip the final direct-child wait while stdout or stderr is paused by asyncio reader backpressure.",
+    "reason": "Reconstruct the registered cleanup-completion/resource-release defect on the backpressured output path.",
+    "preserved_behavior": [
+      "Public AnyIO process APIs and construction paths",
+      "stdin, stdout, and stderr stream-close calls",
+      "per-pipe transport close calls",
+      "process wait and cancellation cleanup when output readers are not backpressured",
+      "exception-path transport handling",
+      "non-target source files"
+    ],
+    "expected_observable_consequence": "Process.aclose() returns while a backpressured direct child remains alive after its output pipe is closed."
+  },
+  "source_acceptance_status": "PASS",
+  "source_acceptance": {
+    "changed_source_paths": [
+      "src/anyio/_backends/_asyncio.py"
+    ],
+    "source_import_binding": "PASS",
+    "public_subprocess_suite": "54 passed, 34 skipped, 0 failed"
+  },
+  "registered_lifecycle_defect": {
+    "defect_id": "cleanup-resource-release",
+    "interaction_type": "public_close",
+    "required_fact": "DIRECT_CHILD_LIVE_CONFIRMED"
+  }
+}

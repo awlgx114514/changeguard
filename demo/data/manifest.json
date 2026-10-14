@@ -1,0 +1,21 @@
+{
+  "schema": "changeguard-demo-records-v1",
+  "provenance": "Existing Task3 final-evidence-v2 executions; original database and run artifact bytes preserved.",
+  "benchmark_implementation_commit": "b92c883a567e4b1cd7af5c8b02d9a13363713a3b",
+  "success": {
+    "profile_id": "KNOWN_FIX",
+    "run_id": "KNOWN_FIX-3ce0dd94920c4f399261d6ddb34a8b85",
+    "files": {
+      "campaign.sqlite3": "e95ebb41e08f9379db8a9b15867d944364a83bf85db980e74ea68635bac832c9",
+      "record.json": "885e304d90ccfc5aa0534ea850bcfd399af036d2884f0f8ec8fcaf2b30742f8a"
+    }
+  },
+  "w2": {
+    "profile_id": "W2",
+    "run_id": "W2-03e0e373d17f453c946e8ff3fb32b9c8",
+    "files": {
+      "campaign.sqlite3": "88e8a85138306ce2a2a95e42cc4cbcbecb8dbb59d2594a2eda408617e503abab",
+      "record.json": "2bebccf71969044522a4989da05f867f9b06b2fc655b9ecf707bb88ca33fd59e"
+    }
+  }
+}

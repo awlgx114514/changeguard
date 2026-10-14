@@ -1,0 +1,49 @@
+CHANGEGUARD AUDIT
+
+TASK_RESULT=FAIL
+
+IDENTITY:
+  campaign=task3-prefreeze-70eacc12ac54420ba912704f5a6d5ef4
+  slot=4
+  run=W2-03e0e373d17f453c946e8ff3fb32b9c8
+  generation=1
+
+OBSERVATION:
+  raw_wait_result: WAIT_TIMEOUT=258
+  child_process: LIVE
+
+STORED_COMPONENT_RESULTS:
+  subprocess-close:backpressured-close-4:completion_record=PASS
+  subprocess-close:backpressured-close-4:deadline=PASS
+  subprocess-close:backpressured-close-4:direct_child_lifecycle=FAIL
+
+EVIDENCE:
+  execution_identity: VALID
+  artifact_binding: VALID
+  lifecycle_evidence: VALID
+  scope=record_integrity_and_references
+
+EVIDENCE_CHAIN:
+  asset=sha256:65d6c9828289239c9ffd39e9ce02a22003e82049010154c4d2ee28213b5bfa5b
+  measurement=4f86de8a33e0171073aecd684aaf6763906dec929dd1b69c8fe4ffe1dbc4b6b2
+  child_binding=ce74b8f3004b4219a863b3d01e044694
+  lifecycle=449f84734816f81e3b4a9cb15f5ddc4464e7be13413fb9c5c532c347ba76c719
+  registered_defect=cleanup-resource-release
+  terminal=terminal-W2-03e0e373d17f453c946e8ff3fb32b9c8
+  persistence=COMMITTED
+
+ATTRIBUTION:
+  confirmed_rejection
+  support=LIMITED_BY_PRODUCER_TRUST
+
+FAILURE_BOUNDARY:
+  Lifecycle Observation
+
+COVERAGE:
+  audit_status=PARTIAL
+  source_binding=UNVERIFIABLE
+  source_binding_reason=NOT_PROVEN_WITHIN_CAPTURE
+  producer_authority=UNVERIFIABLE
+  discovery=DISCOVERY_UNKNOWN
+  ordering=PARTIAL_ORDER
+  boundary_selection=PARTIAL_HISTORY

@@ -1,0 +1,40 @@
+{
+  "asset_id": "CA_DIFFERENT_TRANSPORT_HELPER",
+  "source_identity": "https://github.com/agronholm/anyio@2571e5805b9986cdcbc1e155c9898188cd13d611",
+  "base_revision": "2571e5805b9986cdcbc1e155c9898188cd13d611",
+  "base_source_tree_identity": "25a969076bc3f1afdd8072b71b559127a439204f",
+  "benchmark_implementation_commit": "b92c883a567e4b1cd7af5c8b02d9a13363713a3b",
+  "benchmark_implementation_tree": "a0bc6855a8bb97e97d1dc459d98ca1d3b6a70553",
+  "profile_catalog_version": "task3-profile-catalog-v1",
+  "profile_catalog_sha256": "83872b928bd2685eef8b68203f1d9316b419be6a9eeb1f967e084d3e8e1b9e4e",
+  "mutation_delta": {
+    "path": "src/anyio/_backends/_asyncio.py",
+    "location": "Process.aclose() pipe transport cleanup",
+    "change": "Close all registered pipe transports through a dedicated direct transport helper before marking public stream wrappers closed.",
+    "reason": "Exercise a distinct resource-management path while preserving the frozen close and child-completion behavior.",
+    "preserved_behavior": [
+      "Public process and stream APIs",
+      "Direct-child completion wait",
+      "First public probe reports local stream closure",
+      "Non-target source files"
+    ],
+    "expected_observable_consequence": "The alternate direct transport helper closes each existing pipe before Process.aclose() waits for the direct child."
+  },
+  "source_hash_algorithm": "sha256-relative-path-and-length-prefixed-content-v1",
+  "final_tree_hash": "accf0acbdb65ab9bf005f96e2f3ac693b3ded9fadac46e05cdc97e73c00141ef",
+  "fixture_identity": "sha256:accf0acbdb65ab9bf005f96e2f3ac693b3ded9fadac46e05cdc97e73c00141ef",
+  "asset_identity": "sha256:accf0acbdb65ab9bf005f96e2f3ac693b3ded9fadac46e05cdc97e73c00141ef",
+  "file_count": 115,
+  "file_sha256": {
+    "src/anyio/_backends/_asyncio.py": "0e07bf6fea3514e68d9506f1227c051e7336ca1b97b7643b1e5f7020c9fdb7f0"
+  },
+  "source_acceptance_status": "PASS",
+  "source_acceptance": {
+    "changed_source_paths": ["src/anyio/_backends/_asyncio.py"],
+    "public_subprocess_suite": "54 passed, 34 skipped, 0 failed",
+    "actual_anyio_import_path": "benchmarks/task3_v6/assets/CA_DIFFERENT_TRANSPORT_HELPER/src/anyio/__init__.py",
+    "actual_asyncio_backend_import_path": "benchmarks/task3_v6/assets/CA_DIFFERENT_TRANSPORT_HELPER/src/anyio/_backends/_asyncio.py"
+  },
+  "runtime_acceptance_status": "PENDING",
+  "generated_files_excluded": true
+}

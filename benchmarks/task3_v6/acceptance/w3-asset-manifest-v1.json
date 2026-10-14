@@ -1,0 +1,48 @@
+{
+  "asset_id": "W3",
+  "source_identity": "https://github.com/agronholm/anyio@2571e5805b9986cdcbc1e155c9898188cd13d611",
+  "base_revision": "2571e5805b9986cdcbc1e155c9898188cd13d611",
+  "base_source_tree_identity": "25a969076bc3f1afdd8072b71b559127a439204f",
+  "benchmark_implementation_commit": "b92c883a567e4b1cd7af5c8b02d9a13363713a3b",
+  "benchmark_implementation_tree": "a0bc6855a8bb97e97d1dc459d98ca1d3b6a70553",
+  "profile_catalog_version": "task3-profile-catalog-v1",
+  "profile_catalog_sha256": "83872b928bd2685eef8b68203f1d9316b419be6a9eeb1f967e084d3e8e1b9e4e",
+  "source_hash_algorithm": "sha256-relative-path-and-length-prefixed-content-v1",
+  "final_tree_hash": "5c9bfb262f7bee8b7e0d8b0d33411b7851318a294ac49fa02d05fcf91d42e02a",
+  "fixture_identity": "sha256:5c9bfb262f7bee8b7e0d8b0d33411b7851318a294ac49fa02d05fcf91d42e02a",
+  "asset_identity": "sha256:5c9bfb262f7bee8b7e0d8b0d33411b7851318a294ac49fa02d05fcf91d42e02a",
+  "file_count": 115,
+  "file_sha256": {
+    "src/anyio/_backends/_asyncio.py": "ce8d135b3f42933032704994ef17c19a33235ea0f8322525e0f81065e51de1f6"
+  },
+  "mutation_delta": {
+    "path": "src/anyio/_backends/_asyncio.py",
+    "location": "Process.aclose() stdout and stderr cleanup",
+    "change": "Keep public stream closure and Process.wait() unchanged while omitting the stdout and stderr pipe-transport close operations.",
+    "reason": "Represent a resource-release omission after public wrapper closure.",
+    "expected_observable_consequence": "A finite writer fills the inherited stdout pipe; the public stderr wrapper reports ClosedResourceError while Process.aclose() remains pending and the direct child remains live."
+  },
+  "source_acceptance_status": "PASS",
+  "source_acceptance": {
+    "changed_source_paths": [
+      "src/anyio/_backends/_asyncio.py"
+    ],
+    "source_import_binding": "PASS",
+    "public_subprocess_suite": {
+      "result": "TARGET_SEMANTIC_DEFECT_ONLY",
+      "passed": 52,
+      "skipped": 34,
+      "failed": 2,
+      "expected_failures": [
+        "test_close_with_stdout_blocked_subprocess[asyncio]",
+        "test_close_with_stdout_blocked_subprocess[asyncio+eager]"
+      ],
+      "unexpected_failures": []
+    }
+  },
+  "registered_lifecycle_defect": {
+    "defect_id": "cleanup-resource-release",
+    "interaction_type": "public_close",
+    "required_fact": "DIRECT_CHILD_LIVE_CONFIRMED"
+  }
+}

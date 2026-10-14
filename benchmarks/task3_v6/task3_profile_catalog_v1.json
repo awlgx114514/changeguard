@@ -10,13 +10,13 @@
       "profile_class": "CORRECT",
       "required": true,
       "formal_sample_eligible": true,
-      "registration_status": "REGISTERED_ASSET_MISSING",
+      "registration_status": "REGISTERED",
       "semantic_registration": "Known correct implementation used as a positive profile.",
       "expected_admission_kind": "ALL_FORMAL_RUNS_PASS",
       "asset_registration": {
-        "status": "NOT_YET_AVAILABLE",
-        "path": null,
-        "manifest_reference": null
+        "status": "PRESENT_UNACCEPTED",
+        "path": "benchmarks/task3_v6/assets/KNOWN_FIX",
+        "manifest_reference": "benchmarks/task3_v6/acceptance/known-fix-asset-manifest-v1.json"
       },
       "acceptance_artifact_reference": null,
       "notes": "Required correct profile from the frozen Task3 v6 universe."
@@ -26,13 +26,13 @@
       "profile_class": "CORRECT",
       "required": true,
       "formal_sample_eligible": true,
-      "registration_status": "REGISTERED_ASSET_MISSING",
+      "registration_status": "REGISTERED",
       "semantic_registration": "Correct alternative using a different transport helper.",
       "expected_admission_kind": "ALL_FORMAL_RUNS_PASS",
       "asset_registration": {
-        "status": "NOT_YET_AVAILABLE",
-        "path": null,
-        "manifest_reference": null
+        "status": "PRESENT_UNACCEPTED",
+        "path": "benchmarks/task3_v6/assets/CA_DIFFERENT_TRANSPORT_HELPER",
+        "manifest_reference": "benchmarks/task3_v6/acceptance/ca-different-transport-helper-manifest-v1.json"
       },
       "acceptance_artifact_reference": null,
       "notes": "Required correct profile from the frozen Task3 v6 universe."
@@ -42,13 +42,13 @@
       "profile_class": "CORRECT",
       "required": true,
       "formal_sample_eligible": true,
-      "registration_status": "REGISTERED_ASSET_MISSING",
+      "registration_status": "REGISTERED",
       "semantic_registration": "Correct alternative using a legal cleanup ordering.",
       "expected_admission_kind": "ALL_FORMAL_RUNS_PASS",
       "asset_registration": {
-        "status": "NOT_YET_AVAILABLE",
-        "path": null,
-        "manifest_reference": null
+        "status": "PRESENT_UNACCEPTED",
+        "path": "benchmarks/task3_v6/assets/CA_LEGAL_CLEANUP_ORDERING",
+        "manifest_reference": "benchmarks/task3_v6/acceptance/ca-legal-cleanup-ordering-manifest-v1.json"
       },
       "acceptance_artifact_reference": null,
       "notes": "Required correct profile from the frozen Task3 v6 universe."
@@ -58,13 +58,13 @@
       "profile_class": "CORRECT",
       "required": true,
       "formal_sample_eligible": true,
-      "registration_status": "REGISTERED_ASSET_MISSING",
+      "registration_status": "REGISTERED",
       "semantic_registration": "Correct alternative using a late cache update.",
       "expected_admission_kind": "ALL_FORMAL_RUNS_PASS",
       "asset_registration": {
-        "status": "NOT_YET_AVAILABLE",
-        "path": null,
-        "manifest_reference": null
+        "status": "PRESENT_UNACCEPTED",
+        "path": "benchmarks/task3_v6/assets/CA_LATE_CACHE_UPDATE",
+        "manifest_reference": "benchmarks/task3_v6/acceptance/ca-late-cache-update-manifest-v1.json"
       },
       "acceptance_artifact_reference": null,
       "notes": "Required correct profile from the frozen Task3 v6 universe."
@@ -74,13 +74,13 @@
       "profile_class": "CORRECT",
       "required": true,
       "formal_sample_eligible": true,
-      "registration_status": "REGISTERED_ASSET_MISSING",
+      "registration_status": "REGISTERED",
       "semantic_registration": "Correct alternative using an asynchronous closed-stream probe.",
       "expected_admission_kind": "ALL_FORMAL_RUNS_PASS",
       "asset_registration": {
-        "status": "NOT_YET_AVAILABLE",
-        "path": null,
-        "manifest_reference": null
+        "status": "PRESENT_UNACCEPTED",
+        "path": "benchmarks/task3_v6/assets/CA_ASYNC_CLOSED_STREAM_PROBE",
+        "manifest_reference": "benchmarks/task3_v6/acceptance/ca-async-closed-stream-probe-manifest-v1.json"
       },
       "acceptance_artifact_reference": null,
       "notes": "Required correct profile from the frozen Task3 v6 universe."
@@ -90,13 +90,13 @@
       "profile_class": "CORRECT",
       "required": true,
       "formal_sample_eligible": true,
-      "registration_status": "REGISTERED_ASSET_MISSING",
+      "registration_status": "REGISTERED",
       "semantic_registration": "Correct alternative using buffering or spooling.",
       "expected_admission_kind": "ALL_FORMAL_RUNS_PASS",
       "asset_registration": {
-        "status": "NOT_YET_AVAILABLE",
-        "path": null,
-        "manifest_reference": null
+        "status": "PRESENT_UNACCEPTED",
+        "path": "benchmarks/task3_v6/assets/CA_BUFFERING_SPOOLING",
+        "manifest_reference": "benchmarks/task3_v6/acceptance/ca-buffering-spooling-manifest-v1.json"
       },
       "acceptance_artifact_reference": null,
       "notes": "Required correct profile from the frozen Task3 v6 universe."
@@ -112,7 +112,7 @@
       "asset_registration": {
         "status": "PRESENT_UNACCEPTED",
         "path": "benchmarks/task3_v6/assets/W1/reference-fixed",
-        "manifest_reference": null
+        "manifest_reference": "benchmarks/task3_v6/acceptance/w1-asset-manifest-v1.json"
       },
       "acceptance_artifact_reference": null,
       "notes": "Source files are present; no catalog-bound profile acceptance is registered."
@@ -128,7 +128,7 @@
       "asset_registration": {
         "status": "PRESENT_UNACCEPTED",
         "path": "benchmarks/task3_v6/assets/W2/wrong-variant",
-        "manifest_reference": "benchmarks/task3_v6/acceptance/w2-asset-manifest-fidelity-v2.json"
+        "manifest_reference": "benchmarks/task3_v6/acceptance/w2-asset-manifest-prefreeze-v3.json"
       },
       "acceptance_artifact_reference": null,
       "notes": "Legacy pre-freeze records lack catalog binding and do not count as current acceptance."
@@ -138,13 +138,13 @@
       "profile_class": "REQUIRED_WRONG",
       "required": true,
       "formal_sample_eligible": true,
-      "registration_status": "REGISTERED_ASSET_MISSING",
+      "registration_status": "REGISTERED",
       "semantic_registration": "Required wrong variant W3.",
       "expected_admission_kind": "ALL_FORMAL_RUNS_CONFIRMED_REJECTION",
       "asset_registration": {
-        "status": "NOT_YET_AVAILABLE",
-        "path": null,
-        "manifest_reference": null
+        "status": "PRESENT_UNACCEPTED",
+        "path": "benchmarks/task3_v6/assets/W3/wrong-variant",
+        "manifest_reference": "benchmarks/task3_v6/acceptance/w3-asset-manifest-v1.json"
       },
       "acceptance_artifact_reference": null,
       "notes": "Required wrong profile from the frozen Task3 v6 universe."

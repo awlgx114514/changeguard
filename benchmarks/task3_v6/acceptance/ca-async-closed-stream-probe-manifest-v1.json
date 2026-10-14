@@ -1,0 +1,40 @@
+{
+  "asset_id": "CA_ASYNC_CLOSED_STREAM_PROBE",
+  "source_identity": "https://github.com/agronholm/anyio@2571e5805b9986cdcbc1e155c9898188cd13d611",
+  "base_revision": "2571e5805b9986cdcbc1e155c9898188cd13d611",
+  "base_source_tree_identity": "25a969076bc3f1afdd8072b71b559127a439204f",
+  "benchmark_implementation_commit": "b92c883a567e4b1cd7af5c8b02d9a13363713a3b",
+  "benchmark_implementation_tree": "a0bc6855a8bb97e97d1dc459d98ca1d3b6a70553",
+  "profile_catalog_version": "task3-profile-catalog-v1",
+  "profile_catalog_sha256": "83872b928bd2685eef8b68203f1d9316b419be6a9eeb1f967e084d3e8e1b9e4e",
+  "mutation_delta": {
+    "path": "src/anyio/_backends/_asyncio.py",
+    "location": "StreamReaderWrapper.aclose()",
+    "change": "Yield once before setting the closed-resource exception and again before returning from asynchronous stream closure.",
+    "reason": "Exercise asynchronous closure scheduling while ensuring Process.aclose() returns only after stream closure is complete.",
+    "preserved_behavior": [
+      "First public receive after Process.aclose() raises ClosedResourceError",
+      "Direct-child completion behavior",
+      "No cleanup is deferred beyond Process.aclose() return",
+      "Non-target source files"
+    ],
+    "expected_observable_consequence": "The first external stream probe begins after the asynchronous closure has completed."
+  },
+  "source_hash_algorithm": "sha256-relative-path-and-length-prefixed-content-v1",
+  "final_tree_hash": "7ec6d790146f5de78980c06bc651e8d2b69d10468db74f61de91a6f0a6f00ff7",
+  "fixture_identity": "sha256:7ec6d790146f5de78980c06bc651e8d2b69d10468db74f61de91a6f0a6f00ff7",
+  "asset_identity": "sha256:7ec6d790146f5de78980c06bc651e8d2b69d10468db74f61de91a6f0a6f00ff7",
+  "file_count": 115,
+  "file_sha256": {
+    "src/anyio/_backends/_asyncio.py": "4dcb76cf4c2afb81ed935229964f511c7bbc254fd4659f26569fcd9ceaf46714"
+  },
+  "source_acceptance_status": "PASS",
+  "source_acceptance": {
+    "changed_source_paths": ["src/anyio/_backends/_asyncio.py"],
+    "public_subprocess_suite": "54 passed, 34 skipped, 0 failed",
+    "actual_anyio_import_path": "benchmarks/task3_v6/assets/CA_ASYNC_CLOSED_STREAM_PROBE/src/anyio/__init__.py",
+    "actual_asyncio_backend_import_path": "benchmarks/task3_v6/assets/CA_ASYNC_CLOSED_STREAM_PROBE/src/anyio/_backends/_asyncio.py"
+  },
+  "runtime_acceptance_status": "PENDING",
+  "generated_files_excluded": true
+}

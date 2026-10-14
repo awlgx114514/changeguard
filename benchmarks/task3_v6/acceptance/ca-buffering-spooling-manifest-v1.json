@@ -1,0 +1,41 @@
+{
+  "asset_id": "CA_BUFFERING_SPOOLING",
+  "source_identity": "https://github.com/agronholm/anyio@2571e5805b9986cdcbc1e155c9898188cd13d611",
+  "base_revision": "2571e5805b9986cdcbc1e155c9898188cd13d611",
+  "base_source_tree_identity": "25a969076bc3f1afdd8072b71b559127a439204f",
+  "benchmark_implementation_commit": "b92c883a567e4b1cd7af5c8b02d9a13363713a3b",
+  "benchmark_implementation_tree": "a0bc6855a8bb97e97d1dc459d98ca1d3b6a70553",
+  "profile_catalog_version": "task3-profile-catalog-v1",
+  "profile_catalog_sha256": "83872b928bd2685eef8b68203f1d9316b419be6a9eeb1f967e084d3e8e1b9e4e",
+  "mutation_delta": {
+    "path": "src/anyio/_backends/_asyncio.py",
+    "location": "Process.aclose() pending stdout and stderr buffers",
+    "change": "Copy pending stream-reader bytes into a bounded SpooledTemporaryFile before closing each public output stream.",
+    "reason": "Exercise a buffering and temporary-storage path while preserving close-time stream disposal and direct-child wait behavior.",
+    "preserved_behavior": [
+      "All pending buffered bytes are written before the wrapper buffer is cleared",
+      "The temporary spool is closed before Process.aclose() returns",
+      "First public probes report local stream closure",
+      "Direct-child completion behavior",
+      "Non-target source files"
+    ],
+    "expected_observable_consequence": "Unread bytes already buffered from the original inherited output pipes pass through the spool before close."
+  },
+  "source_hash_algorithm": "sha256-relative-path-and-length-prefixed-content-v1",
+  "final_tree_hash": "8494c1a3076f8fff4d4c0bb67a8bd0d81a0484f39b86dceb7ea7c88da8adf097",
+  "fixture_identity": "sha256:8494c1a3076f8fff4d4c0bb67a8bd0d81a0484f39b86dceb7ea7c88da8adf097",
+  "asset_identity": "sha256:8494c1a3076f8fff4d4c0bb67a8bd0d81a0484f39b86dceb7ea7c88da8adf097",
+  "file_count": 115,
+  "file_sha256": {
+    "src/anyio/_backends/_asyncio.py": "2bb4e4f8caefc02e5f5e8f557a9d65538d1c4c7235cf5a0ac60db271c278cb94"
+  },
+  "source_acceptance_status": "PASS",
+  "source_acceptance": {
+    "changed_source_paths": ["src/anyio/_backends/_asyncio.py"],
+    "public_subprocess_suite": "54 passed, 34 skipped, 0 failed",
+    "actual_anyio_import_path": "benchmarks/task3_v6/assets/CA_BUFFERING_SPOOLING/src/anyio/__init__.py",
+    "actual_asyncio_backend_import_path": "benchmarks/task3_v6/assets/CA_BUFFERING_SPOOLING/src/anyio/_backends/_asyncio.py"
+  },
+  "runtime_acceptance_status": "PENDING",
+  "generated_files_excluded": true
+}

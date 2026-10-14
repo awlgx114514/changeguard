@@ -1,0 +1,26 @@
+{
+  "TITLE": "AUDIT REPLAY",
+  "SOURCE": "persisted execution records",
+  "MODE": "READ_ONLY",
+  "STORED_FACTS": {
+    "TASK_VERDICT": "FAIL",
+    "run": "W2-03e0e373d17f453c946e8ff3fb32b9c8",
+    "terminal_decision": "terminal-W2-03e0e373d17f453c946e8ff3fb32b9c8"
+  },
+  "DERIVED_ANALYSIS": {
+    "EARLIEST_OBSERVED_FAILURE": "Lifecycle Observation",
+    "supporting_records": [
+      "lifecycle_evidence:449f84734816f81e3b4a9cb15f5ddc4464e7be13413fb9c5c532c347ba76c719",
+      "terminal_decisions:terminal-W2-03e0e373d17f453c946e8ff3fb32b9c8"
+    ]
+  },
+  "COVERAGE": {
+    "audit_status": "PARTIAL",
+    "source_binding": "UNVERIFIABLE",
+    "source_binding_reason": "NOT_PROVEN_WITHIN_CAPTURE",
+    "producer_authority": "UNVERIFIABLE",
+    "discovery": "DISCOVERY_UNKNOWN",
+    "ordering": "PARTIAL_ORDER",
+    "boundary_selection": "PARTIAL_HISTORY"
+  }
+}

@@ -1,0 +1,30 @@
+RUN_STATUS=PASS
+
+IDENTITY:
+  campaign=task3-prefreeze-6fa43adef44d459e82ec6b059e469f4b
+  slot=7
+  run=KNOWN_FIX-3ce0dd94920c4f399261d6ddb34a8b85
+  generation=1
+
+EVIDENCE_STATUS=VALID
+EVIDENCE_SCOPE=record_integrity_and_references
+
+VALIDATION:
+  execution_identity=PASS
+  artifact_binding=PASS
+  integrity=PASS
+
+EVIDENCE:
+  measurement=9313b4414904ec35a2c7651c3c3af9b9de0a16372429a3dbe4f51d0cef7b0042
+  lifecycle=9959c8e585e3a70edc135d1f361a9e4727826ae47188a518c59bd4059f7f36c7
+
+DECISION:
+  COMMITTED
+  terminal=terminal-KNOWN_FIX-3ce0dd94920c4f399261d6ddb34a8b85
+
+COVERAGE:
+  audit_status=PARTIAL
+  source_binding=UNVERIFIABLE
+  source_binding_reason=NOT_PROVEN_WITHIN_CAPTURE
+  producer_authority=UNVERIFIABLE
+  discovery=DISCOVERY_UNKNOWN

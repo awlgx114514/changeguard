@@ -1,0 +1,457 @@
+{
+  "confirmed_rejection_count": 8,
+  "invalid_count": 0,
+  "not_proven_count": 0,
+  "pass_count": 0,
+  "results": [
+    {
+      "asset_identity": "sha256:f0437dba7ea1186809dd39fac1e3d112086e86d7ad77f152bfd3322ae65902c3",
+      "attribution_result": {
+        "category": "confirmed_rejection",
+        "conditions": [
+          {
+            "asset_identity_matches": true,
+            "evidence_id": "af47ba6fb9a2629b9cb6aa8e30c875b02367a2412cf8ca57f70c0bb91a070bee",
+            "observed_fact_matches": true,
+            "prerequisites_complete": true,
+            "registered_defect_applies": true,
+            "same_run": true,
+            "valid": true
+          }
+        ],
+        "evidence_ids": [
+          "af47ba6fb9a2629b9cb6aa8e30c875b02367a2412cf8ca57f70c0bb91a070bee"
+        ],
+        "valid": true
+      },
+      "completed_at_utc": "2026-10-12T09:18:00.425609+00:00",
+      "component_results": [
+        {
+          "component_id": "subprocess-close:public-close-0:completion_record",
+          "evidence_ids": [
+            "57776906a46e01fd92ffb6a8bec30574972b3ad125570f6c06c12f22d1895fa7"
+          ],
+          "verdict": "PASS"
+        },
+        {
+          "component_id": "subprocess-close:public-close-0:deadline",
+          "evidence_ids": [
+            "57776906a46e01fd92ffb6a8bec30574972b3ad125570f6c06c12f22d1895fa7"
+          ],
+          "verdict": "PASS"
+        },
+        {
+          "component_id": "subprocess-close:public-close-0:direct_child_lifecycle",
+          "evidence_ids": [
+            "af47ba6fb9a2629b9cb6aa8e30c875b02367a2412cf8ca57f70c0bb91a070bee"
+          ],
+          "verdict": "FAIL"
+        }
+      ],
+      "confirmed_rejection": true,
+      "database_path": "D:\\Task3Calibration\\runs\\w2-v6-prefreeze-verified\\run-01-94a4cf3b8aa142948e57c8668077241c.sqlite3",
+      "direct_child_leak_verdict": "FAIL",
+      "environment_identity": "sha256:5d5e0387dbc4794b778fff88d12fb4d9bbe4168b61572fd66cff9cb52461dcb0",
+      "fixture_identity": "sha256:f0437dba7ea1186809dd39fac1e3d112086e86d7ad77f152bfd3322ae65902c3",
+      "lifecycle_evidence_id": "af47ba6fb9a2629b9cb6aa8e30c875b02367a2412cf8ca57f70c0bb91a070bee",
+      "lifecycle_fact": "DIRECT_CHILD_LIVE_CONFIRMED",
+      "raw_wait_result": 258,
+      "rejection_attribution_valid": true,
+      "run_id": "w2-v6-0-0eade4ef33074bd88a4d988af8b691c5",
+      "task_verdict": "FAIL"
+    },
+    {
+      "asset_identity": "sha256:f0437dba7ea1186809dd39fac1e3d112086e86d7ad77f152bfd3322ae65902c3",
+      "attribution_result": {
+        "category": "confirmed_rejection",
+        "conditions": [
+          {
+            "asset_identity_matches": true,
+            "evidence_id": "1d5b8e0be741551b0872c640763ee5ab5ac58b02bd8f5b3f708a670685f81b44",
+            "observed_fact_matches": true,
+            "prerequisites_complete": true,
+            "registered_defect_applies": true,
+            "same_run": true,
+            "valid": true
+          }
+        ],
+        "evidence_ids": [
+          "1d5b8e0be741551b0872c640763ee5ab5ac58b02bd8f5b3f708a670685f81b44"
+        ],
+        "valid": true
+      },
+      "completed_at_utc": "2026-10-12T09:18:00.653402+00:00",
+      "component_results": [
+        {
+          "component_id": "subprocess-close:public-close-1:completion_record",
+          "evidence_ids": [
+            "250ec45129ff19ca05f3bfbe5c1d777aabbfd73768adbd551a8e0f87fc653c63"
+          ],
+          "verdict": "PASS"
+        },
+        {
+          "component_id": "subprocess-close:public-close-1:deadline",
+          "evidence_ids": [
+            "250ec45129ff19ca05f3bfbe5c1d777aabbfd73768adbd551a8e0f87fc653c63"
+          ],
+          "verdict": "PASS"
+        },
+        {
+          "component_id": "subprocess-close:public-close-1:direct_child_lifecycle",
+          "evidence_ids": [
+            "1d5b8e0be741551b0872c640763ee5ab5ac58b02bd8f5b3f708a670685f81b44"
+          ],
+          "verdict": "FAIL"
+        }
+      ],
+      "confirmed_rejection": true,
+      "database_path": "D:\\Task3Calibration\\runs\\w2-v6-prefreeze-verified\\run-02-6b43249d216d4f7e8acfa268ed2bbed2.sqlite3",
+      "direct_child_leak_verdict": "FAIL",
+      "environment_identity": "sha256:5d5e0387dbc4794b778fff88d12fb4d9bbe4168b61572fd66cff9cb52461dcb0",
+      "fixture_identity": "sha256:f0437dba7ea1186809dd39fac1e3d112086e86d7ad77f152bfd3322ae65902c3",
+      "lifecycle_evidence_id": "1d5b8e0be741551b0872c640763ee5ab5ac58b02bd8f5b3f708a670685f81b44",
+      "lifecycle_fact": "DIRECT_CHILD_LIVE_CONFIRMED",
+      "raw_wait_result": 258,
+      "rejection_attribution_valid": true,
+      "run_id": "w2-v6-1-5ae0f94e1b1948b28d5a126d09b254dc",
+      "task_verdict": "FAIL"
+    },
+    {
+      "asset_identity": "sha256:f0437dba7ea1186809dd39fac1e3d112086e86d7ad77f152bfd3322ae65902c3",
+      "attribution_result": {
+        "category": "confirmed_rejection",
+        "conditions": [
+          {
+            "asset_identity_matches": true,
+            "evidence_id": "c1a7618e1a319b559e7e6ad419cfeb1d4c37d40cd8e85dae1a70c4ecb1876908",
+            "observed_fact_matches": true,
+            "prerequisites_complete": true,
+            "registered_defect_applies": true,
+            "same_run": true,
+            "valid": true
+          }
+        ],
+        "evidence_ids": [
+          "c1a7618e1a319b559e7e6ad419cfeb1d4c37d40cd8e85dae1a70c4ecb1876908"
+        ],
+        "valid": true
+      },
+      "completed_at_utc": "2026-10-12T09:18:00.810802+00:00",
+      "component_results": [
+        {
+          "component_id": "subprocess-close:public-close-2:completion_record",
+          "evidence_ids": [
+            "8894ba6edde7629bfb5ed54839a00a5d9107c50f3ba96f801b2d44cd9142e4b6"
+          ],
+          "verdict": "PASS"
+        },
+        {
+          "component_id": "subprocess-close:public-close-2:deadline",
+          "evidence_ids": [
+            "8894ba6edde7629bfb5ed54839a00a5d9107c50f3ba96f801b2d44cd9142e4b6"
+          ],
+          "verdict": "PASS"
+        },
+        {
+          "component_id": "subprocess-close:public-close-2:direct_child_lifecycle",
+          "evidence_ids": [
+            "c1a7618e1a319b559e7e6ad419cfeb1d4c37d40cd8e85dae1a70c4ecb1876908"
+          ],
+          "verdict": "FAIL"
+        }
+      ],
+      "confirmed_rejection": true,
+      "database_path": "D:\\Task3Calibration\\runs\\w2-v6-prefreeze-verified\\run-03-ea2ba50a20b242f8a1ec8889c2e94464.sqlite3",
+      "direct_child_leak_verdict": "FAIL",
+      "environment_identity": "sha256:5d5e0387dbc4794b778fff88d12fb4d9bbe4168b61572fd66cff9cb52461dcb0",
+      "fixture_identity": "sha256:f0437dba7ea1186809dd39fac1e3d112086e86d7ad77f152bfd3322ae65902c3",
+      "lifecycle_evidence_id": "c1a7618e1a319b559e7e6ad419cfeb1d4c37d40cd8e85dae1a70c4ecb1876908",
+      "lifecycle_fact": "DIRECT_CHILD_LIVE_CONFIRMED",
+      "raw_wait_result": 258,
+      "rejection_attribution_valid": true,
+      "run_id": "w2-v6-2-5d80f4d8c4ec48d08977f3047b14dec3",
+      "task_verdict": "FAIL"
+    },
+    {
+      "asset_identity": "sha256:f0437dba7ea1186809dd39fac1e3d112086e86d7ad77f152bfd3322ae65902c3",
+      "attribution_result": {
+        "category": "confirmed_rejection",
+        "conditions": [
+          {
+            "asset_identity_matches": true,
+            "evidence_id": "fc11e29a62620af0354811abde7d64b2ca8fd606d1880d53d339cf53fe835205",
+            "observed_fact_matches": true,
+            "prerequisites_complete": true,
+            "registered_defect_applies": true,
+            "same_run": true,
+            "valid": true
+          }
+        ],
+        "evidence_ids": [
+          "fc11e29a62620af0354811abde7d64b2ca8fd606d1880d53d339cf53fe835205"
+        ],
+        "valid": true
+      },
+      "completed_at_utc": "2026-10-12T09:18:01.017022+00:00",
+      "component_results": [
+        {
+          "component_id": "subprocess-close:public-close-3:completion_record",
+          "evidence_ids": [
+            "3102876d70a188a38e0aa979f9119002a16c92b849bf6b2d77a720ba1d34d68c"
+          ],
+          "verdict": "PASS"
+        },
+        {
+          "component_id": "subprocess-close:public-close-3:deadline",
+          "evidence_ids": [
+            "3102876d70a188a38e0aa979f9119002a16c92b849bf6b2d77a720ba1d34d68c"
+          ],
+          "verdict": "PASS"
+        },
+        {
+          "component_id": "subprocess-close:public-close-3:direct_child_lifecycle",
+          "evidence_ids": [
+            "fc11e29a62620af0354811abde7d64b2ca8fd606d1880d53d339cf53fe835205"
+          ],
+          "verdict": "FAIL"
+        }
+      ],
+      "confirmed_rejection": true,
+      "database_path": "D:\\Task3Calibration\\runs\\w2-v6-prefreeze-verified\\run-04-95d363e3af94481081f9375cc9da0c14.sqlite3",
+      "direct_child_leak_verdict": "FAIL",
+      "environment_identity": "sha256:5d5e0387dbc4794b778fff88d12fb4d9bbe4168b61572fd66cff9cb52461dcb0",
+      "fixture_identity": "sha256:f0437dba7ea1186809dd39fac1e3d112086e86d7ad77f152bfd3322ae65902c3",
+      "lifecycle_evidence_id": "fc11e29a62620af0354811abde7d64b2ca8fd606d1880d53d339cf53fe835205",
+      "lifecycle_fact": "DIRECT_CHILD_LIVE_CONFIRMED",
+      "raw_wait_result": 258,
+      "rejection_attribution_valid": true,
+      "run_id": "w2-v6-3-8a4dd8ec92f44dc182a44a4cbef97351",
+      "task_verdict": "FAIL"
+    },
+    {
+      "asset_identity": "sha256:f0437dba7ea1186809dd39fac1e3d112086e86d7ad77f152bfd3322ae65902c3",
+      "attribution_result": {
+        "category": "confirmed_rejection",
+        "conditions": [
+          {
+            "asset_identity_matches": true,
+            "evidence_id": "f0911687673f81d86fd17de96ad46a3ef8664d1013bfb47e1de08558d843aeb8",
+            "observed_fact_matches": true,
+            "prerequisites_complete": true,
+            "registered_defect_applies": true,
+            "same_run": true,
+            "valid": true
+          }
+        ],
+        "evidence_ids": [
+          "f0911687673f81d86fd17de96ad46a3ef8664d1013bfb47e1de08558d843aeb8"
+        ],
+        "valid": true
+      },
+      "completed_at_utc": "2026-10-12T09:18:01.172910+00:00",
+      "component_results": [
+        {
+          "component_id": "subprocess-close:public-close-4:completion_record",
+          "evidence_ids": [
+            "eb4818812e8b01fb0879058277c1eb3752bc9a87e3bb151a5100d6d71e907736"
+          ],
+          "verdict": "PASS"
+        },
+        {
+          "component_id": "subprocess-close:public-close-4:deadline",
+          "evidence_ids": [
+            "eb4818812e8b01fb0879058277c1eb3752bc9a87e3bb151a5100d6d71e907736"
+          ],
+          "verdict": "PASS"
+        },
+        {
+          "component_id": "subprocess-close:public-close-4:direct_child_lifecycle",
+          "evidence_ids": [
+            "f0911687673f81d86fd17de96ad46a3ef8664d1013bfb47e1de08558d843aeb8"
+          ],
+          "verdict": "FAIL"
+        }
+      ],
+      "confirmed_rejection": true,
+      "database_path": "D:\\Task3Calibration\\runs\\w2-v6-prefreeze-verified\\run-05-2decd0f1e0ee412692aa7cac123b01d7.sqlite3",
+      "direct_child_leak_verdict": "FAIL",
+      "environment_identity": "sha256:5d5e0387dbc4794b778fff88d12fb4d9bbe4168b61572fd66cff9cb52461dcb0",
+      "fixture_identity": "sha256:f0437dba7ea1186809dd39fac1e3d112086e86d7ad77f152bfd3322ae65902c3",
+      "lifecycle_evidence_id": "f0911687673f81d86fd17de96ad46a3ef8664d1013bfb47e1de08558d843aeb8",
+      "lifecycle_fact": "DIRECT_CHILD_LIVE_CONFIRMED",
+      "raw_wait_result": 258,
+      "rejection_attribution_valid": true,
+      "run_id": "w2-v6-4-e850c4a0e8c04178a2aff94cacc4b164",
+      "task_verdict": "FAIL"
+    },
+    {
+      "asset_identity": "sha256:f0437dba7ea1186809dd39fac1e3d112086e86d7ad77f152bfd3322ae65902c3",
+      "attribution_result": {
+        "category": "confirmed_rejection",
+        "conditions": [
+          {
+            "asset_identity_matches": true,
+            "evidence_id": "178b8a8bac458e5f4ba96195d9c7e87d864005a60d8211354b64dcb83ea2af4d",
+            "observed_fact_matches": true,
+            "prerequisites_complete": true,
+            "registered_defect_applies": true,
+            "same_run": true,
+            "valid": true
+          }
+        ],
+        "evidence_ids": [
+          "178b8a8bac458e5f4ba96195d9c7e87d864005a60d8211354b64dcb83ea2af4d"
+        ],
+        "valid": true
+      },
+      "completed_at_utc": "2026-10-12T09:18:01.350050+00:00",
+      "component_results": [
+        {
+          "component_id": "subprocess-close:public-close-5:completion_record",
+          "evidence_ids": [
+            "f3e14568860391c5f2a4aba8ffb284f371c8fcd7fc9096c91604f38bc6f751b9"
+          ],
+          "verdict": "PASS"
+        },
+        {
+          "component_id": "subprocess-close:public-close-5:deadline",
+          "evidence_ids": [
+            "f3e14568860391c5f2a4aba8ffb284f371c8fcd7fc9096c91604f38bc6f751b9"
+          ],
+          "verdict": "PASS"
+        },
+        {
+          "component_id": "subprocess-close:public-close-5:direct_child_lifecycle",
+          "evidence_ids": [
+            "178b8a8bac458e5f4ba96195d9c7e87d864005a60d8211354b64dcb83ea2af4d"
+          ],
+          "verdict": "FAIL"
+        }
+      ],
+      "confirmed_rejection": true,
+      "database_path": "D:\\Task3Calibration\\runs\\w2-v6-prefreeze-verified\\run-06-f2147257ef644613845e91fb233c25df.sqlite3",
+      "direct_child_leak_verdict": "FAIL",
+      "environment_identity": "sha256:5d5e0387dbc4794b778fff88d12fb4d9bbe4168b61572fd66cff9cb52461dcb0",
+      "fixture_identity": "sha256:f0437dba7ea1186809dd39fac1e3d112086e86d7ad77f152bfd3322ae65902c3",
+      "lifecycle_evidence_id": "178b8a8bac458e5f4ba96195d9c7e87d864005a60d8211354b64dcb83ea2af4d",
+      "lifecycle_fact": "DIRECT_CHILD_LIVE_CONFIRMED",
+      "raw_wait_result": 258,
+      "rejection_attribution_valid": true,
+      "run_id": "w2-v6-5-a088fa72db00435393612dd0b7e51021",
+      "task_verdict": "FAIL"
+    },
+    {
+      "asset_identity": "sha256:f0437dba7ea1186809dd39fac1e3d112086e86d7ad77f152bfd3322ae65902c3",
+      "attribution_result": {
+        "category": "confirmed_rejection",
+        "conditions": [
+          {
+            "asset_identity_matches": true,
+            "evidence_id": "678b8fad9cf951e1236eef2dbe81caadcd3f72861f8e9e430db333248a5c1818",
+            "observed_fact_matches": true,
+            "prerequisites_complete": true,
+            "registered_defect_applies": true,
+            "same_run": true,
+            "valid": true
+          }
+        ],
+        "evidence_ids": [
+          "678b8fad9cf951e1236eef2dbe81caadcd3f72861f8e9e430db333248a5c1818"
+        ],
+        "valid": true
+      },
+      "completed_at_utc": "2026-10-12T09:18:01.515735+00:00",
+      "component_results": [
+        {
+          "component_id": "subprocess-close:public-close-6:completion_record",
+          "evidence_ids": [
+            "32909b0f5ea35942ccd04855b49b050ee7c2a7cf432df205bd81544e695d2001"
+          ],
+          "verdict": "PASS"
+        },
+        {
+          "component_id": "subprocess-close:public-close-6:deadline",
+          "evidence_ids": [
+            "32909b0f5ea35942ccd04855b49b050ee7c2a7cf432df205bd81544e695d2001"
+          ],
+          "verdict": "PASS"
+        },
+        {
+          "component_id": "subprocess-close:public-close-6:direct_child_lifecycle",
+          "evidence_ids": [
+            "678b8fad9cf951e1236eef2dbe81caadcd3f72861f8e9e430db333248a5c1818"
+          ],
+          "verdict": "FAIL"
+        }
+      ],
+      "confirmed_rejection": true,
+      "database_path": "D:\\Task3Calibration\\runs\\w2-v6-prefreeze-verified\\run-07-0d3bf1a05362450d913e2941af561ae4.sqlite3",
+      "direct_child_leak_verdict": "FAIL",
+      "environment_identity": "sha256:5d5e0387dbc4794b778fff88d12fb4d9bbe4168b61572fd66cff9cb52461dcb0",
+      "fixture_identity": "sha256:f0437dba7ea1186809dd39fac1e3d112086e86d7ad77f152bfd3322ae65902c3",
+      "lifecycle_evidence_id": "678b8fad9cf951e1236eef2dbe81caadcd3f72861f8e9e430db333248a5c1818",
+      "lifecycle_fact": "DIRECT_CHILD_LIVE_CONFIRMED",
+      "raw_wait_result": 258,
+      "rejection_attribution_valid": true,
+      "run_id": "w2-v6-6-b2796169af184a7abca9726fbba89c20",
+      "task_verdict": "FAIL"
+    },
+    {
+      "asset_identity": "sha256:f0437dba7ea1186809dd39fac1e3d112086e86d7ad77f152bfd3322ae65902c3",
+      "attribution_result": {
+        "category": "confirmed_rejection",
+        "conditions": [
+          {
+            "asset_identity_matches": true,
+            "evidence_id": "e46c319a2a0b897fd7fc5bb71b3414dccec750498a112dd5e0a427274600504e",
+            "observed_fact_matches": true,
+            "prerequisites_complete": true,
+            "registered_defect_applies": true,
+            "same_run": true,
+            "valid": true
+          }
+        ],
+        "evidence_ids": [
+          "e46c319a2a0b897fd7fc5bb71b3414dccec750498a112dd5e0a427274600504e"
+        ],
+        "valid": true
+      },
+      "completed_at_utc": "2026-10-12T09:18:01.657806+00:00",
+      "component_results": [
+        {
+          "component_id": "subprocess-close:public-close-7:completion_record",
+          "evidence_ids": [
+            "5710f7d550c01a4d8c75124718c024bf0d4dfa133234cfb02c7051b5448b2af0"
+          ],
+          "verdict": "PASS"
+        },
+        {
+          "component_id": "subprocess-close:public-close-7:deadline",
+          "evidence_ids": [
+            "5710f7d550c01a4d8c75124718c024bf0d4dfa133234cfb02c7051b5448b2af0"
+          ],
+          "verdict": "PASS"
+        },
+        {
+          "component_id": "subprocess-close:public-close-7:direct_child_lifecycle",
+          "evidence_ids": [
+            "e46c319a2a0b897fd7fc5bb71b3414dccec750498a112dd5e0a427274600504e"
+          ],
+          "verdict": "FAIL"
+        }
+      ],
+      "confirmed_rejection": true,
+      "database_path": "D:\\Task3Calibration\\runs\\w2-v6-prefreeze-verified\\run-08-023ac463da1e4707875268a2b648dc3a.sqlite3",
+      "direct_child_leak_verdict": "FAIL",
+      "environment_identity": "sha256:5d5e0387dbc4794b778fff88d12fb4d9bbe4168b61572fd66cff9cb52461dcb0",
+      "fixture_identity": "sha256:f0437dba7ea1186809dd39fac1e3d112086e86d7ad77f152bfd3322ae65902c3",
+      "lifecycle_evidence_id": "e46c319a2a0b897fd7fc5bb71b3414dccec750498a112dd5e0a427274600504e",
+      "lifecycle_fact": "DIRECT_CHILD_LIVE_CONFIRMED",
+      "raw_wait_result": 258,
+      "rejection_attribution_valid": true,
+      "run_id": "w2-v6-7-c7fa4b6cfcbc4eefa45830fc28a9213c",
+      "task_verdict": "FAIL"
+    }
+  ],
+  "run_count": 8
+}

@@ -1,0 +1,40 @@
+{
+  "asset_id": "CA_LATE_CACHE_UPDATE",
+  "source_identity": "https://github.com/agronholm/anyio@2571e5805b9986cdcbc1e155c9898188cd13d611",
+  "base_revision": "2571e5805b9986cdcbc1e155c9898188cd13d611",
+  "base_source_tree_identity": "25a969076bc3f1afdd8072b71b559127a439204f",
+  "benchmark_implementation_commit": "b92c883a567e4b1cd7af5c8b02d9a13363713a3b",
+  "benchmark_implementation_tree": "a0bc6855a8bb97e97d1dc459d98ca1d3b6a70553",
+  "profile_catalog_version": "task3-profile-catalog-v1",
+  "profile_catalog_sha256": "83872b928bd2685eef8b68203f1d9316b419be6a9eeb1f967e084d3e8e1b9e4e",
+  "mutation_delta": {
+    "path": "src/anyio/_backends/_asyncio.py",
+    "location": "_ProcessStreamProtocol.process_exited()",
+    "change": "Schedule the AnyIO exit notification for the next event-loop turn after asyncio has updated the authoritative process return code.",
+    "reason": "Exercise a late non-authoritative completion notification without delaying the authoritative returncode update.",
+    "preserved_behavior": [
+      "Process.returncode reads asyncio's authoritative child status",
+      "Process.wait() returns the correct direct-child return code",
+      "Process.aclose() waits for direct-child completion",
+      "Non-target source files"
+    ],
+    "expected_observable_consequence": "The cached wait notification follows the authoritative return-code update by one event-loop scheduling turn."
+  },
+  "source_hash_algorithm": "sha256-relative-path-and-length-prefixed-content-v1",
+  "final_tree_hash": "8d29926ddd41c31a1c926a5ef49a8984cfa4bfa592914db925156a284e526779",
+  "fixture_identity": "sha256:8d29926ddd41c31a1c926a5ef49a8984cfa4bfa592914db925156a284e526779",
+  "asset_identity": "sha256:8d29926ddd41c31a1c926a5ef49a8984cfa4bfa592914db925156a284e526779",
+  "file_count": 115,
+  "file_sha256": {
+    "src/anyio/_backends/_asyncio.py": "ca954bf8478ffbbcd990d229637bac6dc7ad308551c6af4db7b6d7d53239970f"
+  },
+  "source_acceptance_status": "PASS",
+  "source_acceptance": {
+    "changed_source_paths": ["src/anyio/_backends/_asyncio.py"],
+    "public_subprocess_suite": "54 passed, 34 skipped, 0 failed",
+    "actual_anyio_import_path": "benchmarks/task3_v6/assets/CA_LATE_CACHE_UPDATE/src/anyio/__init__.py",
+    "actual_asyncio_backend_import_path": "benchmarks/task3_v6/assets/CA_LATE_CACHE_UPDATE/src/anyio/_backends/_asyncio.py"
+  },
+  "runtime_acceptance_status": "PENDING",
+  "generated_files_excluded": true
+}

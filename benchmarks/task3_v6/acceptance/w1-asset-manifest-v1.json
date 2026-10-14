@@ -1,0 +1,52 @@
+{
+  "asset_id": "W1",
+  "source_identity": "https://github.com/agronholm/anyio@2571e5805b9986cdcbc1e155c9898188cd13d611",
+  "base_revision": "2571e5805b9986cdcbc1e155c9898188cd13d611",
+  "base_source_tree_identity": "25a969076bc3f1afdd8072b71b559127a439204f",
+  "benchmark_implementation_commit": "b92c883a567e4b1cd7af5c8b02d9a13363713a3b",
+  "benchmark_implementation_tree": "a0bc6855a8bb97e97d1dc459d98ca1d3b6a70553",
+  "profile_catalog_version": "task3-profile-catalog-v1",
+  "profile_catalog_sha256": "83872b928bd2685eef8b68203f1d9316b419be6a9eeb1f967e084d3e8e1b9e4e",
+  "source_hash_algorithm": "sha256-relative-path-and-length-prefixed-content-v1",
+  "final_tree_hash": "ef8a198ea19e8d25b9a5d114b55d976a6054ef7c82d77c006a798c8d229b0359",
+  "fixture_identity": "sha256:ef8a198ea19e8d25b9a5d114b55d976a6054ef7c82d77c006a798c8d229b0359",
+  "asset_identity": "sha256:ef8a198ea19e8d25b9a5d114b55d976a6054ef7c82d77c006a798c8d229b0359",
+  "file_count": 115,
+  "file_sha256": {
+    "src/anyio/_backends/_asyncio.py": "5095602044d7b4a8de8220bec29f0cdee4713f24e8fa08cfa79e5c03b36ab62c"
+  },
+  "mutation_delta": {
+    "path": "src/anyio/_backends/_asyncio.py",
+    "location": "Process.aclose()",
+    "change": "Return immediately without closing the process streams or waiting for the direct child.",
+    "reason": "Represent the registered cleanup-completion failure in the subprocess lifecycle.",
+    "expected_observable_consequence": "A backpressured direct child remains alive after Process.aclose() returns."
+  },
+  "source_acceptance_status": "PASS",
+  "source_acceptance": {
+    "changed_source_paths": [
+      "src/anyio/_backends/_asyncio.py"
+    ],
+    "source_import_binding": "PASS",
+    "public_subprocess_suite": {
+      "result": "TARGET_SEMANTIC_DEFECT_ONLY",
+      "passed": 48,
+      "skipped": 34,
+      "failed": 6,
+      "expected_failures": [
+        "test_process_aexit_cancellation_doesnt_orphan_process[asyncio]",
+        "test_process_aexit_cancellation_doesnt_orphan_process[asyncio+eager]",
+        "test_process_aexit_cancellation_closes_standard_streams[asyncio]",
+        "test_process_aexit_cancellation_closes_standard_streams[asyncio+eager]",
+        "test_exceptions_after_subprocess_closes_standard_streams[asyncio]",
+        "test_exceptions_after_subprocess_closes_standard_streams[asyncio+eager]"
+      ],
+      "unexpected_failures": []
+    }
+  },
+  "registered_lifecycle_defect": {
+    "defect_id": "cleanup-resource-release",
+    "interaction_type": "public_close",
+    "required_fact": "DIRECT_CHILD_LIVE_CONFIRMED"
+  }
+}
